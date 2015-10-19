@@ -1,0 +1,6 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://fenollp.github.io
+title: Pierre Fenoll
+paginate: 5
