@@ -1,0 +1,6 @@
+---
+published: false
+title: MyTitle
+layout: post
+---
+Hi
