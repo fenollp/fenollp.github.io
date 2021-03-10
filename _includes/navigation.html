@@ -1,0 +1,17 @@
+<div id="nav">
+    <div id="nav-inner">
+        {% for item in site.data.navigation %}
+            {% assign url_html = item.link | append: '.html' %}
+
+            {% if item.link == '/' and page.url == '/' %}
+                <a id="home" class="active" href="{{ item.link }}">{{ item.name }}</a>
+            {% elsif item.link == '/' %}
+                <a id="home" href="{{ item.link }}">{{ item.name }}</a>
+            {% elsif page.url == item.link or page.url == url_html %}
+                <a class="active" href="{{ item.link }}">{{ item.name }}</a>
+            {% else %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

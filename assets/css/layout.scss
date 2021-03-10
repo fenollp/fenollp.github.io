@@ -1,0 +1,264 @@
+---
+---
+
+@import url(syntax.css);
+
+html, body {
+    margin: 0;
+    font-size: 18px;
+    background-color: #171717;
+    color: white;
+    font-family: 'Nunito Sans', 'Noto Sans', 'Open Sans', 'Arial', sans-serif;
+}
+
+pre, code {
+    font-family: 'JetBrains Mono', 'Hack', 'Consolas', monospace;
+    font-variant-ligatures: none;
+}
+pre {
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 0.3rem;
+    line-height: 1.5;
+    overflow: auto;
+    scrollbar-color: #555 #292929;
+}
+pre:hover {
+    scrollbar-color: #666 #292929;
+}
+
+code {
+    padding: 0 0.2em;
+    background-color: #ffffff15;
+    border-radius: 5px;
+    font-size: 88%;
+    text-shadow: 1px 1px 0 #00000015;
+}
+
+pre > code {
+    padding: 0;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+::selection {
+    background-color: rgba(21, 83, 255, 0.45);
+    color: inherit;
+}
+
+a {
+    color: #73deff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+}
+
+em {
+    color: #ffda73;
+}
+
+.bullet {
+    margin: 0 0.5rem;
+    opacity: 0.7;
+}
+.bullet::before {
+    content: '•';
+}
+
+#nav, #main, #footer {
+    padding: 0 1em;
+}
+
+#nav-inner, #main-inner, #footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#nav {
+    background-color: #222;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+#nav a {
+    color: white;
+    margin-right: 1rem;
+    opacity: 0.85;
+}
+#nav a:hover, #nav a.active {
+    opacity: 1;
+}
+
+#nav #home {
+    color: #ffb732;
+}
+#nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.45rem;
+}
+#nav a.active {
+    text-decoration: underline 2px;
+    text-underline-offset: 0.45rem;
+}
+
+#footer {
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#footer-inner {
+    padding: 1rem 0;
+    line-height: 2rem;
+}
+
+#main {
+    min-height: calc(100vh - 250px);
+}
+
+#main-inner {
+    padding: 3rem 0 4rem 0;
+
+    > *:first-child {
+        margin-top: 0;
+    }
+
+    #meta {
+        margin-bottom: 2rem;
+        opacity: 0.8;
+    }
+
+    .mini-meta {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+}
+
+p {
+    line-height: 1.7em;
+    font-size: 1.2rem;
+    color: #e2e2e2;
+    letter-spacing: 0.01rem;
+    margin: 1.5em 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 1.7rem 0;
+    color: #ffc14f;
+}
+
+.post-title-link a {
+    color: inherit;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin: 1.7rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 1.7rem 0;
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+.hint {
+    background-color: rgba(100, 185, 20, 0.2);
+    padding: 1.2rem 1.4rem;
+    border-radius: 0.3rem;
+
+    .title {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+
+    p {
+        color: white;
+        line-height: 1.5em;
+        font-size: 1.15rem;
+        color: white;
+        margin: 1.2rem 0;
+    }
+
+    > .title:first-child, > p:first-child {
+        margin-top: 0;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+#toc {
+    font-size: 1.1rem;
+
+    #toc-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        margin: 0 0 0.2rem 0;
+        padding: 0 0 0 1.2rem;
+    }
+
+    li {
+        list-style-type: square;
+        padding: 0;
+    }
+}
+
+ul li > p,
+.hint ul li > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    #toc ul ul {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    html, body {
+        font-size: 15px;
+    }
+
+    pre {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        border-radius: 0;
+    }
+}

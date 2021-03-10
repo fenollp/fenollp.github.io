@@ -1,10 +1,22 @@
-excerpt_separator: ""
+title: Pierre Fenoll's thoughts
+description: Posts on current / past / future projects and ideas on the crazy spectrum
+baseurl: ''
+url: https://fenollp.github.io/
+future: true
+highlighter: rouge
+
+asciidoctor:
+  attributes:
+  - idprefix=_
+  - source-highlighter=rouge
+
+plugins:
+- jekyll-asciidoc
+- jekyll-time-to-read
+- jekyll-redirect-from
+
+excerpt_separator: ''
 pygments: true
 markdown: kramdown
-url: http://fenollp.github.io
-title: Pierre Fenoll
 paginate: 5
-description: 
-google_analytics: 
 show_downloads: true
-theme: jekyll-theme-hacker
