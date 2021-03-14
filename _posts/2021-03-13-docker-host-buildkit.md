@@ -15,7 +15,7 @@ In short, `BuildKit` is `DOCKER_BUILDKIT=1 docker build ...`
 * more compute-efficient as well: graph is topologically sorted and executed concurrently plus the docs talk about distribution
 * runs [rootless](https://github.com/moby/buildkit/blob/2be23848e889186388b6d422dfb6e9ca2e8d19cb/docs/rootless.md)!
 * build can [`--output` files](https://docs.docker.com/engine/reference/commandline/build/#custom-build-outputs) to `$PWD`!
-* `--platform` support with fallback on virtualization (uses QEMU)
+* `--platform` support with fallback on emulation (uses QEMU)
 
 ## An example
 
@@ -134,7 +134,7 @@ Here's the SaaS idea:
 	* this is map/reduce pr0n without error handling strategies
 	* > regen the map of this game you're building. It uses a picture of the Earth by NASA and eats 100% CPU of your laptop for like 2h. Your script is ready to eat x10 cores so as to finish only in 12min.
 	* this is a safe `curl https://get.my.app | bash` and [soon] as-portable
-	* faster builds for Apple Silicon (or just Apple) owners: saves cost of virtualization
+	* faster builds for Apple Silicon (or just Apple) owners: saves cost of emulation
 * the compute can be tuned on the website
 	* where one can select & name machines
 	* add/remove SSH credentials
