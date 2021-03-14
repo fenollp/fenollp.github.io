@@ -74,7 +74,7 @@ This alone is very powerful to me: I see a safe (rootless) and simple (one liner
 
 ## `DOCKER_HOST`
 
-Let's keep the MindBlowers comming.
+Let's keep the MindBlowers coming.
 
 `DOCKER_HOST=ssh://othermachine docker ps` lists containers on `othermachine`. (Say you have defined a host `othermachine` in your `~/.ssh/ssh-config`).
 
