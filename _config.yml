@@ -11,9 +11,10 @@ asciidoctor:
   - source-highlighter=rouge
 
 plugins:
-- jekyll-asciidoc
-- jekyll-time-to-read
-- jekyll-redirect-from
+- jekyll-paginate
+# - jekyll-asciidoc
+# - jekyll-time-to-read
+# - jekyll-redirect-from
 
 excerpt_separator: ''
 pygments: true
