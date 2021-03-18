@@ -28,7 +28,7 @@ $ DOCKER_BUILDKIT=1 docker build --platform=local --output=. --file=Cargo.toml .
 # or even:
 $ DOCKER_BUILDKIT=1 docker build --platform=local --output=. git://github.com/some/repo#master:sub/context
 ```
-> > Note that using Docker context `sub/context` [isn't yet supported buy BuildKit](https://github.com/moby/buildkit/issues/1684)...
+> > Note that using Docker context `sub/context` [isn't yet supported by BuildKit](https://github.com/moby/buildkit/issues/1684)...
 
 As noted in that repo's README:
 > Every dependency is built in its isolated environment and cached independently from others.
