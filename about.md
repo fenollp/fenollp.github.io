@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About me
+title: À propos de Pierre Fenoll
 ---
 
 Howdy! I am a computer wizard roaming Europe.

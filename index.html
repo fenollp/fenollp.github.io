@@ -7,8 +7,6 @@ title: fenollp's Blog
     <a href="{{ post.url }}">{{ post.title }}</a>
 </h2>
 <div class="mini-meta">
-    {{ post.date | date_to_string }} <span class="bullet"></span> {{ post.content | reading_time_as_i }} read
+    {{ post.date | date_to_string }}
 </div>
-{{ post.excerpt }}
-<a href="{{ post.url }}">Continue reading...</a>
 {% endfor %}
