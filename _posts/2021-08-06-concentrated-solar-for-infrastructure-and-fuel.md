@@ -33,7 +33,8 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 ### Markus Kayser's Solar Sinter
 * ![sun melts sand](./assets/sha256/89dca751434c554586b59e44d775ece6c511e37beaf98b4710b74a1098633132.jpg)
 * [11, Markus Kayser's Solar Sinter](https://kayserworks.com/798817030644)
-* Lens: 1.4 x 1.0 m, USD600
+* Thesis [17, Towards swarm-based design : distributed and materially-tunable digital fabrication across scales](https://dspace.mit.edu/handle/1721.1/115741)
+	* Page 41. Lens: 1.4 x 1.0 m, USD600
 * [12, Design of a Solar Sand Printer](https://essay.utwente.nl/69808/1/Design%20of%20a%20solar%20sand%20printer.pdf)
 
 ### Large Fresnel lenses
