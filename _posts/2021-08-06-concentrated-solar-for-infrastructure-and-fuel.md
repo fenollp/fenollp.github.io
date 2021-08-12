@@ -42,6 +42,10 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * [1.450 x 1.115m @ EUR100](https://www.solarbrother.com/acheter/lentille-de-fresnel-xl/)
 	* **via email**: *delivered in a roll; should top at 700-800C though*
 
+### ESA's Lunar Soil 3D Printer
+* [Building a lunar base with 3D printing](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Building_a_lunar_base_with_3D_printing)
+* European Union's Horizon 2020 [RegoLight Project](https://regolight.eu/project-2/)
+
 ### Optical Fibers to conduct solar radiation
 * [16, Optical design of a Fresnel concentrating solar system for direct transmission of radiation through an optical fibre bundle](https://www.sciencedirect.com/science/article/abs/pii/S0038092X15006258)
 	* *the average transmission per metre length of fibre is found to be 52%*
@@ -53,10 +57,12 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 	* [11, Concentration Heating System with Optical Fiber Supply](https://www.sciencedirect.com/science/article/pii/S1876610211015025)
 	* [98, Fiber-optic solar energy transmission and concentration](https://www.researchgate.net/publication/229320300_Fiber-optic_solar_energy_transmission_and_concentration)
 * [07, Optical Fiber Tips and Their Applications](https://www.molex.com/mx_upload/superfamily/polymicro/pdfs/Optical_Fiber_Tips_and_Their_Applications_Nov_2007.pdf)
-* [290 DS Tubular Skylight](https://www.solatube.com/residential/skylights/product-selection-guide/290-ds/)
-* [Diamond Dome SUNPIPE](https://www.monodraught.com/shop-sunpipe/)
-* [Parens' SP4 PRODUCT SPECIFICATION](https://www.parans.com/wp-content/uploads/2021/04/Parans_Product_information_2020_2.1.pdf)
-	* **via email**: *quoted at 15k-50k EUR*
+* **optical fiber daylighting system**
+	* [290 DS Tubular Skylight](https://www.solatube.com/residential/skylights/product-selection-guide/290-ds/)
+	* [Diamond Dome SUNPIPE](https://www.monodraught.com/shop-sunpipe/)
+	* [Parens' SP4 PRODUCT SPECIFICATION](https://www.parans.com/wp-content/uploads/2021/04/Parans_Product_information_2020_2.1.pdf)
+		* **via email**: *quoted at 15k-50k EUR*
+	* **Optoelectronic light pipes?**
 
 ### Alternatives to concrete
 * [Omlab's MAACQ: CaCO3 + cellulose + Kaumera + H20](https://www.omlab.nl/maacq/)
@@ -85,15 +91,21 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * [High purity graphite crucible 20EUR](https://www.amazon.fr/puret%C3%A9-graphite-moulage-couvercle-argent%C3%A9/dp/B07LF8YTTL)
 	* *probably up to ~1000C*
 
+### House-scale 3D Printer: the 3DWASP
+* [3D printer house TECLA](https://www.3dwasp.com/en/3d-printed-house-tecla/)
+* [Crane WASP: the infinite 3D Printer (132kUSD)](https://www.3dwasp.com/en/3d-printer-house-crane-wasp/)
+* ![TECLA and crane](./assets/sha256/7059798c2bf999040b667eac814dc8a9113744f71f6161520d466a10d808777c.jpg)
+
 ### Cable-driven parallel robots
 * [wikipedia on CDPRs](https://en.wikipedia.org/wiki/Cable_robots)
 	* stadium sizes already achieved
-* [Hangprinter: cable-driven RepRap](https://hangprinter.org/)
 * [Packages related to simulation and control of cable-driven parallel robots.](https://github.com/oKermorgant/cdpr)
 	* [Olivier Kermorgant](http://pagesperso.ls2n.fr/~kermorgant-o/)
 * [20, SISTEMA AUTOCALIBRABLE PARA PLATAFORMA ROBÓTICA MANIOBRADA MEDIANTE CABLES](https://www.researchgate.net/profile/Alfredo-Maussa/publication/343268337_SISTEMA_AUTOCALIBRABLE_PARA_PLATAFORMA_ROBOTICA_MANIOBRADA_MEDIANTE_CABLES/links/5fa60db8a6fdcc06241cc3a0/SISTEMA-AUTOCALIBRABLE-PARA-PLATAFORMA-ROBOTICA-MANIOBRADA-MEDIANTE-CABLES.pdf)
 * [A Matlab library for cable driven parallel robots.](https://github.com/IRMA-LAB/cdpr_matlab)
 * [18, Development of a parametric cable driven planar robot](https://www.redalyc.org/journal/496/49659032006/html/)
+* [Hangprinter: cable-driven RepRap](https://hangprinter.org/)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jk4fhQvNoaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Laser Sintering
 * [Open-source Selective Laser Sintering](https://github.com/MillerLabFTW/OpenSLS)
@@ -119,10 +131,10 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 ### Vitrified desert sand
 * [14, Properties of Desert Sand and CMAS Glass (NASA)](https://ntrs.nasa.gov/citations/20140017770)
 	* Bulk density of CMAS glass was 2.69 g/cc
-	* Young's modulus 92 GPa
-	* Shear modulus 36 GPa
-	* Poisson's ratio 0.28
-	* showed weight loss of approx. 35 percent due to decomposition of CaCO3 and CaSO4.2H2O when heated to 1400 C
+	* *Young's modulus 92 GPa*
+	* *Shear modulus 36 GPa*
+	* *Poisson's ratio 0.28*
+	* showed weight loss of approx. *35 percent* due to decomposition of CaCO3 and CaSO4.2H2O when heated to 1400 C
 * *stronger than concrete in compression, even iron*
 * but does *reject a third in weight as NOx & SOx*
 * [Emissions to produce 1t of *industrial glass*](https://www.verreonline.fr/encyclopedie/doc/fabri1-Pajean.pdf)
@@ -138,6 +150,13 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 	- Emissions de poussières: 0,3 kg
 	- Emissions de SOx: 4,0 kg
 	- Emissions de NOx: 2,0 kg
+		* *`(510*100)/(1176+105) = 39.8%` of materials + fuel is emited as CO2*
+		* *`(174*100)/1176 = 14.8%` of materials emited as CO2*
+* [54, Thermal decomposition of calcium sulfate](https://core.ac.uk/download/pdf/38909142.pdf)
+	* *CaO, CO2, SO2, S2, H2S, CaS, H2O*
+* **=> potentially vitrifying desert sand emits 15-35% of its mass as CO2**
+	* **65-85% less than concrete**
+	* **however NOx SOx outgassing needs handling**
 
 ### Already in industry
 * thin printable powder [Nylon (PA12) Powder, Sintratec](https://3dchimera.com/products/sintratec-pa12-powder#specs)
