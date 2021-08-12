@@ -179,3 +179,9 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * **energy.gov** [Hydrogen Production: Thermochemical Water Splitting](https://www.energy.gov/eere/fuelcells/hydrogen-production-thermochemical-water-splitting)
 	* *long-term technology pathway, with potentially low or no greenhouse gas emissions*
 	* *Two examples of thermochemical water splitting cycles, the "direct" two-step cerium oxide thermal cycle and the "hybrid" copper chloride cycle, are illustrated in Figure 2. Typically direct cycles are less complex with fewer steps, but they require higher operating temperatures compared with the more complicated hybrid cycles.*
+* **Low CO2 Ammonia with electrochemistry, water splitting**
+	* [20, Electrification of Ammonia Synthesis](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Karthish-Manthiram.pdf)
+		* *optimizing processes*
+	* [20, Building a sustainable industrial and energy infrastructure](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Tobias-Birwe.pdf)
+		* *thyssenkrupp doing large scale electrolysis*
+	* [20, GREEN AMMONIA AT OIL & GAS SCALE](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Alex-Tancock-Keynote.pdf)
