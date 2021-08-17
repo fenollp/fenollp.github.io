@@ -17,6 +17,7 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * **cement production = 8% global CO2 emissions**
 	* 1kg cement = 1kg CO2
 * concrete sand reserves are depleted
+	* *and desert sand is not a suitable replacement* being too uniform
 
 ### Towards carbon-free ammonia production
 * NH3 is 2nd most synthetized chemical
@@ -41,6 +42,7 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * [1.1 x 1.1m @ CHF750](https://www.fruugoschweiz.com/square-shape-focal-length-fresnel-solar-lens/p-55977041-113481672?language=en&ac=croud)
 * [1.450 x 1.115m @ EUR100](https://www.solarbrother.com/acheter/lentille-de-fresnel-xl/)
 	* **via email**: *delivered in a roll; should top at 700-800C though*
+* *flatscreen TVs larger than 60 inches contain a Fresnel lens of at least close to 1m2*
 
 ### ESA's Lunar Soil 3D Printer
 * [Building a lunar base with 3D printing](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Building_a_lunar_base_with_3D_printing)
