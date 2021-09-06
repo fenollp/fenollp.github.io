@@ -6,7 +6,7 @@ categories: [mediapipe, powder.gg, memes, tensorflow, opencv, inference, ios]
 permalink: mediapipe-memes-matching-your-facial-expression
 ---
 
-*Originally [posted on Jun 5, 2020](https://powderapp.medium.com/mediapipe-tutorial-find-memes-that-match-your-facial-expression-9bf598da98c0) during a collaboration between Google and Powder.gg. Some links were updated.*
+*Originally [posted on Jun 5, 2020](https://powderapp.medium.com/mediapipe-tutorial-find-memes-that-match-your-facial-expression-9bf598da98c0) as part of a collaboration between Google and Powder.gg. Some links were updated.*
 
 A post by Pierre Fenoll, Senior Lead Back-End Engineer at Powder.gg
 
@@ -156,7 +156,7 @@ cd mediapipe
 1. **Edit your app’s `Info.plist`**:
     * Create key `NSCameraUsageDescription` with value: `This app uses the camera to demonstrate live video processing.`
 1. **Edit your `Main.storyboard`’s custom class, setting it to `FacialSearchViewController`** (in the Identity inspector)
-    * ![xcode identity inspector](./assets/sha256/5b2464b133f423fe2749429bb6b49aae0fca7d04e87d2d21958443d3a5cb8066.png)
+    * ![xcode identity inspector](./assets/sha256/eaee77b7af739a4a5835ebbfd39cf0629986f7475487d8ae287a7d1077654700.png)
 1. **Build the iOS framework with**
 ```sh
 bazel build --config=ios_arm64 \
@@ -174,7 +174,7 @@ Note: append the contents of `FRAMEWORK_HEADERS` separated by spaces (here: `Obj
     * Copy items if needed > Finish
 1. **Make sure the framework gets embedded into the app**.
     * In General > Frameworks, Libraries, and Embedded Content set `FacialSearch.framework` to `Embed & Sign`
-    * ![xcode embed framework](./assets/sha256/980c03259583a263889e8deab1a8be703d2b7d092381f53d610eeac49280b3a4.png)
+    * ![xcode embed framework](./assets/sha256/4d9dd06fdc808e7a96a8377f8a39863240b3ef9e703ed5a5c4fecf9d9f839a8c.png)
 1. **Connect your device and run.**
     * Note the preprocessor statements at the top of `FacialSearchViewController.swift`:
 
