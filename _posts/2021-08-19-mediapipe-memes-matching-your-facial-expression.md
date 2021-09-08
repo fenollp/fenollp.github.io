@@ -6,6 +6,8 @@ categories: [mediapipe, powder.gg, memes, tensorflow, opencv, inference, ios]
 permalink: mediapipe-memes-matching-your-facial-expression
 ---
 
+## Or: *How to use MediaPipe from Swift*
+
 *Originally [posted on Jun 5, 2020](https://powderapp.medium.com/mediapipe-tutorial-find-memes-that-match-your-facial-expression-9bf598da98c0) as part of a collaboration between Google and Powder.gg. Some links were updated.*
 
 A post by Pierre Fenoll, Senior Lead Back-End Engineer at Powder.gg
@@ -115,7 +117,7 @@ bazel run --platform_suffix=_cpu \
   -c opt --define MEDIAPIPE_DISABLE_GPU=1 \
   mediapipe/examples/facial_search/desktop:facial_search \
   -- \
-  --calculator_graph_config_file=mediapipe/examples/facial_search/graphs/facial_search.pbtxt \
+  --calculator_graph_config_file=mediapipe/examples/facial_search/graphs/facial_search_cpu.pbtxt \
   --images_folder_path=mediapipe/examples/facial_search/images/
 ```
 
@@ -126,7 +128,7 @@ bazel run --platform_suffix=_gpu \
   -c opt --copt -DMESA_EGL_NO_X11_HEADERS --copt -DEGL_NO_X11 \
   mediapipe/examples/facial_search/desktop:facial_search \
   -- \
-  --calculator_graph_config_file=mediapipe/examples/facial_search/graphs/facial_search.pbtxt \
+  --calculator_graph_config_file=mediapipe/examples/facial_search/graphs/facial_search_gpu.pbtxt \
   --images_folder_path=mediapipe/examples/facial_search/images/
 ```
 
