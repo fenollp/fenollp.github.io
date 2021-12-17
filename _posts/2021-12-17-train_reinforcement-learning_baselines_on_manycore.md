@@ -37,7 +37,7 @@ Although BuildKit only recently supports this for git subfolders so I have creat
 This ran on a 6c/*12t* 32GiB amd64 machine for about *5 hours* thanks to this `DOCKER_HOST` environment variable: Docker's ability to execute jobs on another/remote daemon.
 It then [downloads the results](./assets/sha256/0cbcc1d1870efdb2cd0fa2e83389397944f1356766ed95af642b950d9a3483e3.zip) to `$PWD`.
 
-Then if went through the hoops of installing [OpenAI's `gym`](https://gym.openai.com/), [DeepMind's MuJoCo](https://mujoco.org/), [`mujoco_py`](https://github.com/openai/mujoco-py/tree/f1312cceeeebbba17e78d5d77fbffa091eed9a3a#install-and-use-mujoco-py) and to clone this repo https://github.com/DLR-RM/rl-baselines3-zoo, then you should be able to enjoy a trained robot running in its simulated world with:
+Then if you went through the hoops of installing [OpenAI's `gym`](https://gym.openai.com/), [DeepMind's MuJoCo](https://mujoco.org/), [`mujoco_py`](https://github.com/openai/mujoco-py/tree/f1312cceeeebbba17e78d5d77fbffa091eed9a3a#install-and-use-mujoco-py) and to clone this repo https://github.com/DLR-RM/rl-baselines3-zoo, then you should be able to enjoy a trained robot running in its simulated world with:
 ```shell
 python enjoy.py --algo td3 --env Hopper-v3 --folder . --exp-id 0
 ```
