@@ -6,7 +6,15 @@ debug:
 	  jekyll serve --watch --drafts
 
 new.%:
-	$(EDITOR) _posts/$$(date +%F)-$*.md
+	touch _posts/$$(date +%F)-$*.md
+	echo '---' >>$$(ls _posts/* -t | head -n1)
+	echo 'published: true' >>$$(ls _posts/* -t | head -n1)
+	echo "title: $$(echo $* | sed 's%-% %g;s%_% %g')" >>$$(ls _posts/* -t | head -n1)
+	echo 'layout: post' >>$$(ls _posts/* -t | head -n1)
+	echo 'categories: [projects]' >>$$(ls _posts/* -t | head -n1)
+	echo 'permalink: $*' >>$$(ls _posts/* -t | head -n1)
+	echo '---' >>$$(ls _posts/* -t | head -n1)
+	$(EDITOR) $$(ls _posts/* -t | head -n1)
 
 clean:
 	$(if $(wildcard _site), rm -r _site)
