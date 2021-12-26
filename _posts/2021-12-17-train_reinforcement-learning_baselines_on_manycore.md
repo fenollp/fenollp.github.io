@@ -6,14 +6,12 @@ categories: [projects, rl, gym, docker_host]
 permalink: train_reinforcement-learning_baselines_on_manycore
 ---
 
-
 <p align="center">
-  <a href="./assets/sha256/cd403943acef0ed9fc6663b7a830ff0e332df942c2a69f1ae5c7fa9d131240ca.zip">Barely trained, with <code>--build-arg ARGs='-n 1'</code></a><br/>
-  <iframe src="https://player.vimeo.com/video/660203975?h=dc289ced4a&autoplay=1&loop=1&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</p>
-<p align="center">
-  <a href="./assets/sha256/0cbcc1d1870efdb2cd0fa2e83389397944f1356766ed95af642b950d9a3483e3.zip">Fully trained</a><br/>
-  <iframe src="https://player.vimeo.com/video/660204783?h=59a09b773f&autoplay=1&loop=1&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <strong>Barely trained, with <code>--build-arg ARGs='-n 1'</code></strong> <a href="./assets/sha256/cd403943acef0ed9fc6663b7a830ff0e332df942c2a69f1ae5c7fa9d131240ca.zip">[results]</a><br/>
+  <iframe src="https://player.vimeo.com/video/660203975?h=dc289ced4a&autoplay=1&loop=1&byline=0&portrait=0&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <br/>
+  <strong>Fully trained</strong> <a href="./assets/sha256/0cbcc1d1870efdb2cd0fa2e83389397944f1356766ed95af642b950d9a3483e3.zip">[results]</a><br/>
+  <iframe src="https://player.vimeo.com/video/660204783?h=59a09b773f&autoplay=1&loop=1&byline=0&portrait=0&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 In conjonction with the *solar 3D printer / sand melter machine* and the `DOCKER_HOST=... docker build ...` service I am working on (among many other things!)
