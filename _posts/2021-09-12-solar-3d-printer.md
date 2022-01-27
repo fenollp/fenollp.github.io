@@ -358,3 +358,44 @@ https://github.com/bencbartlett/3D-printed-mirror-array
 
 crazy art with CDPRs
 https://www.arn.land/
+
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Caption this <a href="https://t.co/5E0HmXfLWy">pic.twitter.com/5E0HmXfLWy</a></p>&mdash; Amazing Physics (@amazing_physics) <a href="https://twitter.com/amazing_physics/status/1477505125006680064?ref_src=twsrc%5Etfw">January 2, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*large-scale seawater desalination plant*
+
+https://github.com/aidanscannell/pilco-tensorflow
+https://github.com/deepmind/dm_control/blob/master/dm_control/mjcf/README.md
+https://github.com/openai/mujoco-py/blob/master/examples/markers_demo.py
+https://github.com/deepmind/acme
+
+https://i.redd.it/cnu760qb2hc81.jpg
+*helical piling*
+	https://en.wikipedia.org/wiki/Screw_piles
+
+https://www.designboom.com/architecture/magnus-larsson-sculpts-the-saharan-desert-with-bacteria/
+
+https://urbanutopias.net/2019/09/01/arcosanti/
+https://en.wikipedia.org/wiki/Arcosanti
+https://www.archdaily.com/517456/inside-masdar-city
+
+https://en.wikipedia.org/wiki/Sand_dune_stabilization
+*dunes divert wind patterns*
+	*echo dunes*
+		[An echo dune is a topographically anchored (static) high-order bedform with a single crescentic slip face parallel to a topographic obstruction (e.g., cliff, rock) ≥60° in slope.](https://link.springer.com/referenceworkentry/10.1007%2F978-1-4614-9213-9_134-1)
+*artificial ocean dune*
+[Remobilizing stabilized island dunes for keeping up with sea level rise?](https://link.springer.com/article/10.1007/s11852-019-00697-9)
+[Artificial Construction of Dunes in the South of Portugal](https://www.jstor.org/stable/4299434)
+[Dune construction and strengthening](https://climate-adapt.eea.europa.eu/metadata/adaptation-options/dune-construction-and-strengthening)
+[Dune construction and stabilisation](https://www.ctc-n.org/technology-library/protection-hard-engineering/dune-construction-and-stabilisation)
+https://www.britannica.com/science/compound-dune
+*mega-dunes, or draa*
+	https://www.britannica.com/science/barchan
+	https://en.wikipedia.org/wiki/Iva_(plant)
+	https://en.wikipedia.org/wiki/Spartina_patens
+	https://en.wikipedia.org/wiki/Hudsonia
+	https://en.wikipedia.org/wiki/Spartina
+	https://en.wikipedia.org/wiki/Cakile_maritima
+	https://en.wikipedia.org/wiki/Honckenya
+	https://en.wikipedia.org/wiki/Ammophila_arenaria
+https://www.sciencedirect.com/science/article/abs/pii/S0070457107100042
+[13, Suitability of Recycled Glass Cullet as Artificial Dune Fill along Coastal Environments](https://www.researchgate.net/publication/236962695_Suitability_of_Recycled_Glass_Cullet_as_Artificial_Dune_Fill_along_Coastal_Environments)
