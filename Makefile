@@ -14,6 +14,7 @@ new.%:
 	echo 'categories: [projects]' >>$$(ls _posts/* -t | head -n1)
 	echo 'permalink: $*' >>$$(ls _posts/* -t | head -n1)
 	echo '---' >>$$(ls _posts/* -t | head -n1)
+	git add $$(ls _posts/* -t | head -n1)
 	$(EDITOR) $$(ls _posts/* -t | head -n1)
 
 clean:
