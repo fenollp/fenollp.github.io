@@ -65,6 +65,8 @@ La production et le stockage d'énergies renouvelables à très grande échelle.
 
 Court reportage du CNRS en guise d'introduction: [Poudre de soleil](https://www.youtube.com/watch?v=fwRdKCJ0W0A) (FR) [Solar Fuel](https://www.youtube.com/watch?v=eFhb-acEnKM) (EN).
 
+[Ilissa Ocko: The fastest way to slow climate change now](https://www.youtube.com/watch?v=tlWuP7wESZw) TED Countdown
+
 <p align="center"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Uya65xGnJU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Concentrer l'énergie solaire pour alimenter des processus chimiques de synthèse.
