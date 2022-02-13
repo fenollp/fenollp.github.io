@@ -1,27 +1,25 @@
 ---
 published: true
-title: "Agriculture & engrais azotes: vers l'indépendance de la France sur les imports énergétiques"
+title: "Agriculture & engrais azotés: vers l'indépendance de la France sur les imports énergétiques"
 layout: post
 categories: [solar, power, sustainable, solarpunk, post-scarcity]
 permalink: engrais-france-independance
 ---
 
-<!-- FIXME accents -->
-
-D'apres (2021) [Crop Yields - Our World in Data](https://ourworldindata.org/crop-yields), le top3 des pays Europeens en **rendements réalisables** de cultures de ble (plus conservateurs que les « rendements potentiels » biophysiques; réalisables en utilisant les technologies et gestion actuelles, en 2000) sont *le Royaume-Uni, la France et* **l'Ukraine** avec respectivement et approximativement 8, 7 et 6 tonnes par hectare.
+D'après (2021) [Crop Yields - Our World in Data](https://ourworldindata.org/crop-yields), le top 3 des pays Européens en **rendements réalisables** de cultures de blé (plus conservateurs que les « rendements potentiels » biophysiques; réalisables en utilisant les technologies et gestion actuelles, en 2000) sont *le Royaume-Uni, la France et* **l'Ukraine** avec respectivement et approximativement 8, 7 et 6 tonnes par hectare.
 
 Pour donner une perspective, *la Chine, les Etats-Unis et la Russie sont autour de 5, 4.5 et 4 t/ha*.
 
 <iframe src="https://ourworldindata.org/explorers/crop-yields?facet=none&Crop=Wheat&Metric=Attainable+yield&country=IND~USA~GBR~NGA~BRA~FRA~UKR~DZA~CHN~RUS&hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 
 
-## Consommation francaise d'engrais azotes
+## Consommation française d'engrais azotés
 
-Les [engrais mineraux](https://fr.wikipedia.org/wiki/Engrais#Engrais_min%C3%A9raux) sont composes autour du triptyque **NPK** (de leur symbole atomique **N**: azote, **P**: phosphore, **K**: potassium). La composante **N** s'exprime en [ammonium **NH4⁺**](https://fr.wikipedia.org/wiki/Ammonium) qui est le plus souvent produit par [protonation](https://fr.wikipedia.org/wiki/Protonation) —l'ajout d'un proton— de l'[ammoniac **NH3**](https://fr.wikipedia.org/wiki/Ammoniac). Pour en savoir un peu plus sur [le cycle de l'azote](https://www.infometha.org/pour-aller-plus-loin/le-cycle-de-lazote).
+Les [engrais minéraux](https://fr.wikipedia.org/wiki/Engrais#Engrais_min%C3%A9raux) sont composés autour du triptyque **N·P·K** (de leur symbole atomique **N**: azote, **P**: phosphore, **K**: potassium). La composante **N** s'exprime en [ammonium **NH₄⁺**](https://fr.wikipedia.org/wiki/Ammonium) qui est le plus souvent produit par [protonation](https://fr.wikipedia.org/wiki/Protonation) —l'ajout d'un proton— de l'[ammoniac **NH₃**](https://fr.wikipedia.org/wiki/Ammoniac). Pour en savoir un peu plus sur [le cycle de l'azote](https://www.infometha.org/pour-aller-plus-loin/le-cycle-de-lazote).
 
 <p align="center">⁂</p>
 
-A travers le monde, on synthetise **NH3** avec le procédé centenaire [Haber-Bosch](https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Haber) a partir de dihydrogene **H2** extrait par [vaporeformage](https://fr.wikipedia.org/wiki/Vaporeformage) du gaz naturel **CH4**. *On emet ainsi 2.6 kg de gazs a effet de serre par killogramme d'ammoniac produit.*
+A travers le monde, on synthétise **NH₃** avec le procédé centenaire [Haber-Bosch](https://fr.wikipedia.org/wiki/Proc%C3%A9d%C3%A9_Haber) a partir de dihydrogène **H₂** extrait par [vaporeformage](https://fr.wikipedia.org/wiki/Vaporeformage) du gaz naturel **CH₄**. *On émet ainsi 2.6 kg de gazs à effet de serre par kilogramme d'ammoniac produit.*
 
 Pour citer (2020) [Life cycle energy use and greenhouse gas emissions of ammonia production from renewable resources and industrial by-products](https://pubs.rsc.org/en/content/articlelanding/2020/gc/d0gc02301a#:~:text=With%20ammonia%20being%20the%20second,tons%20of%20CO2%20annually) et aussi [www.science.org](https://www.science.org/content/article/ammonia-renewable-fuel-made-sun-air-and-water-could-power-globe-without-carbon#:~:text=The%20emissions%20add%20up%3A%20Ammonia%20production%20consumes%20about%202%25%20of%20the%20world%27s%20energy%20and%20generates%201%25%20of%20its%20CO2):
 
@@ -39,7 +37,7 @@ La France est grande consommatrice de cette molecule: (2021) [www.20minutes.fr](
 
 <p align="center">⁂</p>
 
-En plus de l'impact environmental d'une production (aujourd'hui) carbonee d'azote, la dependance a l'import de l'agriculture francaise, notamment de pays hors de l'Union Europeenne, est un risque quand a la stabilite du pays.
+En plus de l'impact environnemental d'une production (aujourd'hui) carbonée d'azote, la dépendance à l'import de l'agriculture française, notamment de pays hors de l'Union Européenne, est un risque quant à la stabilité du pays.
 
 <p align="center"><a href="https://www.ecologie.gouv.fr/securite-dapprovisionnement-en-gaz"><img alt="www.ecologie.gouv.fr: origine des importations gazière en 2015" src="./assets/sha256/7b9edffea2d819337f8916e3dd09c976afc918d9428894b56758c691f2ce7f0c.jpg"/></a></p>
 
@@ -51,7 +49,7 @@ En plus de l'impact environmental d'une production (aujourd'hui) carbonee d'azot
 
 ## Solutions
 
-La production et le stockage d'energies renouvelables a tres grande echelle.
+La production et le stockage d'énergies renouvelables à très grande échelle.
 
 <p align="center"><img alt="concentrated solar power tower" src="./assets/sha256/f95a451412640414813894368c390e6494cafcc932ff5e2873b6426add73778d.jpeg"></p>
 
@@ -59,49 +57,48 @@ Court reportage du CNRS en guise d'introduction: [Poudre de soleil](https://www.
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Uya65xGnJU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-Concentrer l'energie solaire pour alimenter des processus chimiques de synthese.
-D'une part la chaleur en reservoirs est restituee pendant la nuit, permettant une capacite de production superieure a une centrale photovoltaique.
-D'autre part les produits de cette synthese (**NH3**, [**H2O2**](https://fr.wikipedia.org/wiki/Peroxyde_d%27hydrog%C3%A8ne), ...) sont aiseement transportables vers les zones du Monde ou le Soleil est moins prolifique.
+Concentrer l'énergie solaire pour alimenter des processus chimiques de synthèse.
 
-Outre les [obstacles geopolitiques](https://en.wikipedia.org/wiki/Desertec#Obstacles) d'un projet d'une telle envergure, le transport haut voltage de cette production sous forme electrique ajouterai a lui seul des dizaines de milliards d'euro a sa facture.
+D'une part, la chaleur en réservoirs est restituée pendant la nuit, permettant une capacité de production supérieure à une centrale photovoltaïque.
+D'autre part, les produits de cette synthèse (**NH₃**, [**H₂O₂**](https://fr.wikipedia.org/wiki/Peroxyde_d%27hydrog%C3%A8ne), ...) sont aisément transportables vers les zones du monde où le Soleil est moins prolifique (alors que **H₂** est notoirement [difficile à acheminer](https://fr.wikipedia.org/wiki/Stockage_de_l%27hydrog%C3%A8ne#Sous_forme_liquide)).
 
-Un pojet Australien: (2003) [Developing ammonia based thermochemical energy storage for dish power plants](https://sci-hub.ru/10.1016/j.solener.2003.07.020).
+Outre les [obstacles géopolitiques](https://en.wikipedia.org/wiki/Desertec#Obstacles) d'un projet d'une telle envergure, le transport haut voltage de cette production sous forme électrique ajouterait à lui seul des dizaines de milliards d'euro à sa facture.
 
-Un epais dossier faisant etat d'autres projets a parabole (2017) [Dish Systems for CSP](https://www.osti.gov/servlets/purl/1356835) avec notamment [Big Dish](https://bigdishsolar.com/) (2009).
+Un projet Australien: (2003) [Developing ammonia based thermochemical energy storage for dish power plants](https://sci-hub.ru/10.1016/j.solener.2003.07.020).
 
-Au Etats-Unis on voit apparaitre de *petits* appels a projets: [Funding Notice: Small Innovative Projects in Solar 2022: Concentrating Solar-Thermal Power and Photovoltaics](https://www.energy.gov/eere/solar/articles/funding-notice-small-innovative-projects-solar-2022-concentrating-solar-thermal)
+Un épais dossier faisant état d'autres projets à parabole (2017) [Dish Systems for CSP](https://www.osti.gov/servlets/purl/1356835) avec notamment [Big Dish](https://bigdishsolar.com/) (2009).
+
+Aux États-Unis on voit apparaitre de *petits* appels a projets: [Funding Notice: Small Innovative Projects in Solar 2022: Concentrating Solar-Thermal Power and Photovoltaics](https://www.energy.gov/eere/solar/articles/funding-notice-small-innovative-projects-solar-2022-concentrating-solar-thermal)
 
 En France: [Appel à projets : Concours d'innovation - i-Nov](https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-concours-dinnovation-i-nov)
 
-J'ai personnellement quelques idees a poser (mais ne remplis pas beaucoup de criteres...)
-
 <p align="center">⁂</p>
 
-Vers un cycle energetique ammoniac court et decarbone.
+Vers un cycle énergétique ammoniac court et décarboné.
 
-Chercher a produire **NH3** directement, sans forcement passer par **H2**, ouvrirai la porte a de nouveaux processus chimiques.
+Chercher à produire **NH₃** directement, sans nécessairement passer par **H₂**, ouvrirait la porte à de nouveaux mécanismes chimiques.
 
-Une production d'*ammoniac vert* beneficie le secteur agricole et permettrai egalement une *utilisation sous forme d'electricite*: (2020) [Recent progress on ammonia fuel cells and their potential applications](https://sci-hub.ru/10.1039/d0ta08810b)
+Une production d'*ammoniac vert* bénéficie le secteur agricole et permettra également une *utilisation sous forme d'électricité*: (2020) [Recent progress on ammonia fuel cells and their potential applications](https://sci-hub.ru/10.1039/d0ta08810b)
 
 > [...] ammonia fuel cells offer a clean and reliable energy source, which can mitigate many of the limitations associated with hydrogen economy and contribute to a more nearby sustainable future [...]
 
-[Heliogen](https://heliogen.com/), une [licorne](https://www.crunchbase.com/organization/heliogen) a envergure internationale, combine des avancees techniques sur les [concentrateurs solaires a tour](https://fr.wikipedia.org/wiki/Centrale_solaire_thermodynamique) pour produire **H2** a grande echelle et a un prix attractif, via l'[électrolyse](https://fr.wikipedia.org/wiki/%C3%89lectrolyse) et peut-etre aussi [le craquage de l'eau par photocatalyse](https://fr.wikipedia.org/wiki/Craquage_de_l%27eau_par_photocatalyse).
+[Heliogen](https://heliogen.com/), une [licorne](https://www.crunchbase.com/organization/heliogen) à envergure internationale, combine des avancées techniques sur les [concentrateurs solaires à tour](https://fr.wikipedia.org/wiki/Centrale_solaire_thermodynamique) pour produire **H₂** à grande échelle et à un prix attractif, via l'[électrolyse](https://fr.wikipedia.org/wiki/%C3%89lectrolyse) et peut-être aussi [le craquage de l'eau par photocatalyse](https://fr.wikipedia.org/wiki/Craquage_de_l%27eau_par_photocatalyse).
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZvdENQ5KMjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-Plusieurs innovations utilisees par cette entreprises ont ete invente en Allemagne, France, Espagne et Europe.
-Notamment la simplification et optimisation du [design et de l'actuation des heliostats](http://next-csp.eu/wp-content/uploads/2020/11/200916_SolarPACES_2020_High-performance-Stellio-V1b_220dpi.pdf), et [la calibration et le controle](https://doi.org/10.1016/j.solener.2003.12.006) des dizaines de milliers de ces mirroirs par [vision par ordinateur en boucle fermee](https://doi.org/10.1063/1.4949215).
+Plusieurs innovations utilisées par cette entreprise ont été inventées en Allemagne, France, Espagne et Europe.
+Notamment la simplification et optimisation du [design et de l'actuation des héliostats](http://next-csp.eu/wp-content/uploads/2020/11/200916_SolarPACES_2020_High-performance-Stellio-V1b_220dpi.pdf), et [la calibration et le contrôle](https://doi.org/10.1016/j.solener.2003.12.006) des dizaines de milliers de ces miroirs par [vision par ordinateur en boucle fermée](https://doi.org/10.1063/1.4949215). *J'aimerais travailler sur ces sujets !*
 
 <p align="center">⁂</p>
 
-Camparaison des densite energetique de quelque molecules porteuses d'hydrogene:
+Comparaison des densité énergétique de quelque molécules porteuses d'hydrogène:
 
 | Molecule(s) | MJ/kg | kWh/kg | source |
 |---|---|---|---|
-| aqueous **H2O2** (60%) | 2.1 | | [www.ncbi.nlm.nih.gov](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4857479/#:~:text=The%20energy%20density%20of%20aqueous,compressed%20hydrogen) |
-| **H2** | 120 | 33.33 | [www.h2data.de](http://www.h2data.de) |
-| **CH4**, propane, gasoil, diesel | | 11-14 | [www.h2data.de](http://www.h2data.de) |
-| **NH3** | 22.5 | 5.8 | [www.energy.gov](https://www.energy.gov/sites/prod/files/2015/01/f19/fcto_nh3_h2_storage_white_paper_2006.pdf) |
+| **H₂O₂** (aqueux à 60%) | 2.1 | | [www.ncbi.nlm.nih.gov](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4857479/#:~:text=The%20energy%20density%20of%20aqueous,compressed%20hydrogen) |
+| **H₂** | 120 | 33.33 | [www.h2data.de](http://www.h2data.de) |
+| **CH₄** / propane / diesel | | 11-14 | [www.h2data.de](http://www.h2data.de) |
+| **NH₃** | 22.5 | 5.8 | [www.energy.gov](https://www.energy.gov/sites/prod/files/2015/01/f19/fcto_nh3_h2_storage_white_paper_2006.pdf) |
 
 
 ## Risques
@@ -114,8 +111,8 @@ Camparaison des densite energetique de quelque molecules porteuses d'hydrogene:
 
 <p align="center">⁂</p>
 
-L'utilisation d'engrais azotes a augmentee de presque un ordre de magnitude ces quatre dernieres generations.
-Leurs role dans l'infiltration de nitrates dans les nappes phreatiques et dans l'explosion d'[efflorescences algales](https://fr.wikipedia.org/wiki/Efflorescence_algale), meme partage avec notamment celui de l'elevage porcin, font que leur utilisation est [critiquee jusque dans la sphere publique](https://www.20minutes.fr/planete/3022163-20210416-projet-loi-climat-bataille-vue-engrais-azote-vendredi-assemblee).
+L'utilisation d'engrais azotés a augmenté de presque un ordre de magnitude ces quatre dernières générations.
+Leurs role dans l'infiltration de nitrates dans les nappes phréatiques et dans l'explosion d'[efflorescences algales](https://fr.wikipedia.org/wiki/Efflorescence_algale), même partagé avec notamment celui de l'élevage porcin, font que leur utilisation est [critiquée jusque dans la sphère publique](https://www.20minutes.fr/planete/3022163-20210416-projet-loi-climat-bataille-vue-engrais-azote-vendredi-assemblee).
 
 <p align="center">⁂</p>
 
@@ -137,13 +134,13 @@ Leurs role dans l'infiltration de nitrates dans les nappes phreatiques et dans l
 
 <p align="center">⁂</p>
 
-Le rapport n°646 (2019-2020) [L'agriculture face au défi de la production d'énergie](https://www.senat.fr/rap/r19-646/r19-646_mono.html) de MM. Roland COURTEAU, sénateur et Jean-Luc FUGIT, député, fait au nom de l'Office parlementaire d'évaluation des choix scientifiques et technologiques, déposé le 16 juillet 2020 et particulierement la section *14. Réduire les fuites indésirables de gaz lors de la méthanisation, notamment de méthane, de CO2 et d'ammoniac* merite certainement le coup d'oeil.
+Le rapport au Sénat (2019-2020) [L'agriculture face au défi de la production d'énergie](https://www.senat.fr/rap/r19-646/r19-646_mono.html) touche plusieurs points negatifs, particulièrement la section *14. Réduire les fuites indésirables de gaz lors de la méthanisation, notamment de méthane, de CO2 et d'ammoniac*.
 
 <p align="center">⁂</p>
 
-Un risque geopolitique ?
-Rendre le/les pays plus independants dans les secteurs de l'energie et de l'agriculture au benefice de la stabilite de ceux-ci changerai de fait les contrats d'echanges internationaux.
-La France importerai potentiellement moins de gaz d'origine Norvegienne ou **Russe**.
+Un risque géopolitique ?
+
+Rendre le/les pays plus indépendants dans les secteurs de l'énergie et de l’agriculture au bénéfice de la stabilité de ceux-ci changera de fait les contrats d'échange internationaux. La France importera potentiellement moins de gaz d’origine Norvégienne ou **Russe**.
 
 
 (2015) [Le blé : géohistoire d’un grain au cœur du pouvoir](https://www.cairn.info/revue-geoeconomie-2015-5-page-195.htm#:~:text=31,t%2Dil.%20Dans)
@@ -152,11 +149,11 @@ La France importerai potentiellement moins de gaz d'origine Norvegienne ou **Rus
 
 <p align="center">⁂</p>
 
-Cette annee 2022 commencant avec un arriere gout [de guerre froide, en son sein: l'Urkaine](https://www.lamontagne.fr/paris-75000/actualites/pourquoi-le-ble-est-l-arme-secrete-de-la-russie-de-poutine-dans-sa-quete-de-revanche_14060861/), ne devrait-elle pas se terminer par un projet energetique de collaboration open-source a envergure internationale ?
+Cette année 2022 commençant avec un arrière goût [de guerre froide, en son sein: l'Ukraine](https://www.lamontagne.fr/paris-75000/actualites/pourquoi-le-ble-est-l-arme-secrete-de-la-russie-de-poutine-dans-sa-quete-de-revanche_14060861/), ne devrait-elle pas se terminer par ***un projet énergétique de collaboration open-source à envergure internationale*** ?
 
-Il faut allier nos forces et collaborer pour trouver ces catalyseurs abondants qui transformeront l'immense et intarissable quantite d'energie emise du seul reacteur a fusion nucleaire du coin qui nous parviens en huit minutes apres avoir parcourus 150 millions de kilometres: notre etoile.
+Il faut allier nos forces et collaborer pour trouver ces catalyseurs abondants qui transformeront l’immense et intarissable quantité d'énergie émise du seul réacteur à fusion nucléaire du coin qui nous parvient en huit minutes après avoir parcourus 150 millions de kilomètres: notre étoile.
 
-Nous avons a realiser des projets technologiques titanesques tout en vivant une periode hyper inegalitaire/connectee/consumerisee.
-Peut-etre faudra-t-il rappatrier le platine d'un ou deux asteroides dans la foulee et pourquoi pas !
+Nous avons à réaliser des projets technologiques titanesques tout en vivant une période hyper inégalitaire/connectée/consumérisée.
+Peut-être faudra-t-il [rapatrier le platine d’un ou deux astéroïdes](https://www.transastracorp.com/apis-spacecraft) dans la foulée… et pourquoi pas !
 
-Finalement, nous n'avons jamais ete aussi proche d'une [societe de l'abondance](https://fr.wikipedia.org/wiki/%C3%89conomie_de_l%27abondance).
+Finalement, nous n'avons jamais été aussi proche d'une [société de l'abondance](https://fr.wikipedia.org/wiki/%C3%89conomie_de_l%27abondance).
