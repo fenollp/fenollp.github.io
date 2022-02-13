@@ -6,6 +6,16 @@ categories: [solar, power, sustainable, solarpunk, post-scarcity]
 permalink: engrais-france-independance
 ---
 
+La France a du blé mais importe ses engrais. Engrais qui sont extraits du gaz (importé) et donc carbonés.
+
+Il faut réduire ces importations et aller plus loin encore: utiliser des engrais bas carbone.
+
+Ce point puissant (aussi: *article non rédigé*) introduit un *engrais* qui pourrait être *vert*, produit *sur place* et à l'*échelle* **et** faire office de *vecteur énergétique*.
+
+Nourrir la France et le monde à prix réduit tout en apportant une solution à la transition énergétique. D'une pierre deux coups !
+
+<p align="center">⁂</p>
+
 D'après (2021) [Crop Yields - Our World in Data](https://ourworldindata.org/crop-yields), le top 3 des pays Européens en **rendements réalisables** de cultures de blé (plus conservateurs que les « rendements potentiels » biophysiques; réalisables en utilisant les technologies et gestion actuelles, en 2000) sont *le Royaume-Uni, la France et* **l'Ukraine** avec respectivement et approximativement 8, 7 et 6 tonnes par hectare.
 
 Pour donner une perspective, *la Chine, les Etats-Unis et la Russie sont autour de 5, 4.5 et 4 t/ha*.
@@ -64,7 +74,7 @@ D'autre part, les produits de cette synthèse (**NH₃**, [**H₂O₂**](https:/
 
 Outre les [obstacles géopolitiques](https://en.wikipedia.org/wiki/Desertec#Obstacles) d'un projet d'une telle envergure, le transport haut voltage de cette production sous forme électrique ajouterait à lui seul des dizaines de milliards d'euro à sa facture.
 
-Un projet Australien: (2003) [Developing ammonia based thermochemical energy storage for dish power plants](https://sci-hub.ru/10.1016/j.solener.2003.07.020).
+Un projet australien: (2003) [Developing ammonia based thermochemical energy storage for dish power plants](https://sci-hub.ru/10.1016/j.solener.2003.07.020).
 
 Un épais dossier faisant état d'autres projets à parabole (2017) [Dish Systems for CSP](https://www.osti.gov/servlets/purl/1356835) avec notamment [Big Dish](https://bigdishsolar.com/) (2009).
 
