@@ -21,58 +21,60 @@ In short, `BuildKit` is `DOCKER_BUILDKIT=1 docker build ...`
 
 I stumbled upon `BuildKit` when checking out [`buildx`](https://github.com/docker/buildx). The suggested way of building the executable caught my eye:
 ```shell
-DOCKER_BUILDKIT=1 docker build --platform=local -o . git://github.com/docker/buildx
+DOCKER_BUILDKIT=1 docker build --platform=local -o . https://github.com/docker/buildx.git
 ```
 This one-liner builds an executable for the current machine from a git repo.
 
 Yes, one can also [pull Dockerfiles from Git repositories](https://docs.docker.com/engine/reference/commandline/build/#git-repositories)!
 
 ```shell
-# DOCKER_BUILDKIT=1 docker build --platform=local -o . git://github.com/docker/buildx
-[+] Building 58.8s (15/15) FINISHED
- => [internal] load git source git://github.com/docker/buildx                                                                                                                            4.4s
- => resolve image config for docker.io/docker/dockerfile:1.2                                                                                                                             1.0s
- => CACHED docker-image://docker.io/docker/dockerfile:1.2@sha256:e2a8561e419ab1ba6b2fe6cbdf49fd92b95912df1cf7d313c3e2230a333fdbcc                                                        0.0s
- => [internal] load git source git://github.com/docker/buildx                                                                                                                            0.3s
- => [internal] load metadata for docker.io/library/golang:1.16-alpine                                                                                                                    1.0s
- => [internal] load metadata for docker.io/tonistiigi/xx:golang@sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537                                                  0.0s
- => [xgo 1/1] FROM docker.io/tonistiigi/xx:golang@sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537                                                                1.0s
- => => resolve docker.io/tonistiigi/xx:golang@sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537                                                                    0.0s
- => => sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537 3.29kB / 3.29kB                                                                                           0.0s
- => => sha256:3265075f008d7c003eea3e5c4da277cd5049c0aa31d39d1ec35272168f8bf9dd 523B / 523B                                                                                               0.0s
- => => sha256:ebffcbb79133382ea62829f690a0273304a3f4d83cd4876b58af645356512348 466B / 466B                                                                                               0.0s
- => => sha256:a104d17248520be6cb06ad88875c391c27c5e9e2a7f474d8ad6222d6bbe02445 616B / 616B                                                                                               0.4s
- => => extracting sha256:a104d17248520be6cb06ad88875c391c27c5e9e2a7f474d8ad6222d6bbe02445                                                                                                0.0s
- => [gobase 1/4] FROM docker.io/library/golang:1.16-alpine@sha256:3411aef9ae9cb0fe3534fe2a4d1a9745d952d9a5ed1e20a11ff10549731156e8                                                      11.8s
- => => resolve docker.io/library/golang:1.16-alpine@sha256:3411aef9ae9cb0fe3534fe2a4d1a9745d952d9a5ed1e20a11ff10549731156e8                                                              0.0s
- => => sha256:ba3557a56b150f9b813f9d02274d62914fd8fce120dd374d9ee17b87cf1d277d 2.81MB / 2.81MB                                                                                           0.5s
- => => sha256:448433d692de67fadc3e270369294f10bbc32683e28e4144e7d2d2fedbf60756 281.27kB / 281.27kB                                                                                       0.5s
- => => sha256:7c2a3d42746fcfc7f036d78c91f23a708eccc332efd705161238e6aafc5535a9 153B / 153B                                                                                               0.3s
- => => sha256:3411aef9ae9cb0fe3534fe2a4d1a9745d952d9a5ed1e20a11ff10549731156e8 1.65kB / 1.65kB                                                                                           0.0s
- => => sha256:12d5f94cd4d2840e538e82e26a5dfddf711b30cc98a9f6e01bcf65d7aaf7ccd8 1.36kB / 1.36kB                                                                                           0.0s
- => => sha256:19b59f0222410f71faae89932a13c75635f147de093c7a014931f50576e486cd 5.18kB / 5.18kB                                                                                           0.0s
- => => sha256:f6d283d788a6f5f59325116bda7d61102a1bc7f74d902d617ed62cf90c58fdc6 105.69MB / 105.69MB                                                                                       8.6s
- => => extracting sha256:ba3557a56b150f9b813f9d02274d62914fd8fce120dd374d9ee17b87cf1d277d                                                                                                0.1s
- => => sha256:757f90a0dc844e1ca0ce652556adf5fddaaab3b13d949b52fc384525af8c894e 156B / 156B                                                                                               0.7s
- => => extracting sha256:448433d692de67fadc3e270369294f10bbc32683e28e4144e7d2d2fedbf60756                                                                                                0.1s
- => => extracting sha256:7c2a3d42746fcfc7f036d78c91f23a708eccc332efd705161238e6aafc5535a9                                                                                                0.0s
- => => extracting sha256:f6d283d788a6f5f59325116bda7d61102a1bc7f74d902d617ed62cf90c58fdc6                                                                                                2.2s
- => => extracting sha256:757f90a0dc844e1ca0ce652556adf5fddaaab3b13d949b52fc384525af8c894e                                                                                                0.0s
- => [gobase 2/4] COPY --from=xgo / /                                                                                                                                                     0.8s
- => [gobase 3/4] RUN apk add --no-cache file git                                                                                                                                         2.2s
- => [gobase 4/4] WORKDIR /src                                                                                                                                                            0.1s
- => [buildx-version 1/1] RUN --mount=target=.   PKG=github.com/docker/buildx VERSION=$(git describe --match 'v[0-9]*' --dirty='.m' --always --tags) REVISION=$(git rev-parse HEAD)$(if   0.6s
- => [buildx-build 1/1] RUN --mount=target=. --mount=target=/root/.cache,type=cache   --mount=target=/go/pkg/mod,type=cache   --mount=source=/tmp/.ldflags,target=/tmp/.ldflags,from=bu  35.4s
- => [binaries-unix 1/1] COPY --from=buildx-build /usr/bin/buildx /                                                                                                                       0.2s
- => exporting to client                                                                                                                                                                  0.3s
- => => copying files 57.09MB                                                                                                                                                             0.3s
-# sha256sum buildx
-c941337da6bf9503645e63cd6648b2ee97ae4e0d312faf40473446a05b27d539  buildx
+❯ DOCKER_BUILDKIT=1 docker build --platform=local -o . https://github.com/docker/buildx.git
+[+] Building 65.1s (17/17) FINISHED                                                                                                                                                           
+ => [internal] load git source https://github.com/docker/buildx.git                                                                                                                      4.4s
+ => resolve image config for docker.io/docker/dockerfile:1.3                                                                                                                             1.1s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                                                                         0.0s 
+ => CACHED docker-image://docker.io/docker/dockerfile:1.3@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                                        0.0s 
+ => [internal] load metadata for docker.io/library/golang:1.17-alpine                                                                                                                    1.5s 
+ => [internal] load metadata for docker.io/tonistiigi/xx:1.0.0                                                                                                                           1.5s 
+ => [auth] library/golang:pull token for registry-1.docker.io                                                                                                                            0.0s 
+ => [auth] tonistiigi/xx:pull token for registry-1.docker.io                                                                                                                             0.0s
+ => [xx 1/1] FROM docker.io/tonistiigi/xx:1.0.0@sha256:494fa8488689d499edfaa16dba5922bc2b8cdfcb220bf884354aecbc1f2d8996                                                                  0.9s
+ => => resolve docker.io/tonistiigi/xx:1.0.0@sha256:494fa8488689d499edfaa16dba5922bc2b8cdfcb220bf884354aecbc1f2d8996                                                                     0.0s
+ => => sha256:494fa8488689d499edfaa16dba5922bc2b8cdfcb220bf884354aecbc1f2d8996 2.65kB / 2.65kB                                                                                           0.0s
+ => => sha256:c175b0065054f5c2285c727510f433231f8ebe41d437816d22044696e9adde44 525B / 525B                                                                                               0.0s
+ => => sha256:0f3509935530631c6c402f33310ff23d7bd35caf9ba63059d4157c39329a10d4 940B / 940B                                                                                               0.0s
+ => => sha256:25eaaac5d58a9b6ff4e90ee3cbd4149fd0861e2605d3d11c64e265ba5ba45176 13.99kB / 13.99kB                                                                                         0.7s
+ => => extracting sha256:25eaaac5d58a9b6ff4e90ee3cbd4149fd0861e2605d3d11c64e265ba5ba45176                                                                                                0.0s
+ => [golatest 1/1] FROM docker.io/library/golang:1.17-alpine@sha256:b48997f9a0479c9707298621acbcccb9158eb46c091d5123ae65ce5e791fa2cf                                                    10.6s
+ => => resolve docker.io/library/golang:1.17-alpine@sha256:b48997f9a0479c9707298621acbcccb9158eb46c091d5123ae65ce5e791fa2cf                                                              0.0s
+ => => sha256:b48997f9a0479c9707298621acbcccb9158eb46c091d5123ae65ce5e791fa2cf 1.65kB / 1.65kB                                                                                           0.0s
+ => => sha256:f4ece20984a30d1065b04653bf6781f51ab63421b4b8f011565de0401cfe58d7 1.36kB / 1.36kB                                                                                           0.0s
+ => => sha256:6557bff276fa9485ad7f498c7eded89730e526c2a70fb8c399375c6cd27d9640 5.17kB / 5.17kB                                                                                           0.0s
+ => => sha256:3aa4d0bbde192bfaba75f2d124d8cf2e6de452ae03e55d54105e46b06eb8127e 2.81MB / 2.81MB                                                                                           0.3s
+ => => sha256:48ae170c2a8ceb6dfe7dd52edb58d7be5583518415f0e441c5b7d4f0f8bad244 271.97kB / 271.97kB                                                                                       0.5s
+ => => sha256:cb35b180f41941e8ec9af85110ff412f204e4afaf593ac8fc601c07b7449304d 154B / 154B                                                                                               0.5s
+ => => extracting sha256:3aa4d0bbde192bfaba75f2d124d8cf2e6de452ae03e55d54105e46b06eb8127e                                                                                                0.1s
+ => => sha256:367011ddbc177b50e507d24a640d8fdbdd64a32a4b0e2a3549ad26a1c0581da5 110.19MB / 110.19MB                                                                                       6.9s
+ => => extracting sha256:48ae170c2a8ceb6dfe7dd52edb58d7be5583518415f0e441c5b7d4f0f8bad244                                                                                                0.1s
+ => => sha256:318840287a8912b4d3a5caf13e21932dd668cfa441f84c3f7cb89884f12bc498 155B / 155B                                                                                               0.7s
+ => => extracting sha256:cb35b180f41941e8ec9af85110ff412f204e4afaf593ac8fc601c07b7449304d                                                                                                0.0s
+ => => extracting sha256:367011ddbc177b50e507d24a640d8fdbdd64a32a4b0e2a3549ad26a1c0581da5                                                                                                3.1s
+ => => extracting sha256:318840287a8912b4d3a5caf13e21932dd668cfa441f84c3f7cb89884f12bc498                                                                                                0.0s
+ => [gobase 1/3] COPY --from=xx / /                                                                                                                                                      0.8s
+ => [gobase 2/3] RUN apk add --no-cache file git                                                                                                                                         1.7s
+ => [gobase 3/3] WORKDIR /src                                                                                                                                                            0.0s 
+ => [buildx-version 1/1] RUN --mount=target=.   PKG=github.com/docker/buildx VERSION=$(git describe --match 'v[0-9]*' --dirty='.m' --always --tags) REVISION=$(git rev-parse HEAD)$(if   0.4s 
+ => [buildx-build 1/1] RUN --mount=type=bind,target=.   --mount=type=cache,target=/root/.cache   --mount=type=cache,target=/go/pkg/mod   --mount=type=bind,source=/tmp/.ldflags,target  43.2s 
+ => [binaries-unix 1/1] COPY --from=buildx-build /usr/bin/buildx /                                                                                                                       0.2s 
+ => exporting to client                                                                                                                                                                  0.3s 
+ => => copying files 47.80MB                                                                                                                                                             0.3s 
+❯ sha256sum buildx
+693a6128fb1ad5c7c598a02599111690f8ec89d6d24c3d86b59dd64286edb931  ./buildx
 ```
 
 This alone is very powerful to me: I see a safe (rootless) and simple (one liner) way for anyone to build and use Open Source Software.
 
-## `DOCKER_HOST`
+## `$DOCKER_HOST`
 
 Let's keep the MindBlowers coming.
 
@@ -81,31 +83,33 @@ Let's keep the MindBlowers coming.
 YES you can build images or files, with a *local or remote context / Dockerfile* **on a machine with more oomph!**
 
 ```shell
-# DOCKER_HOST=ssh://othermachine DOCKER_BUILDKIT=1 docker build --platform=local -o . git://github.com/docker/buildx
-[+] Building 3.4s (15/15) FINISHED
- => CACHED [internal] load git source git://github.com/docker/buildx                                                                                                                     0.0s
- => resolve image config for docker.io/docker/dockerfile:1.2                                                                                                                             0.8s
- => CACHED docker-image://docker.io/docker/dockerfile:1.2@sha256:e2a8561e419ab1ba6b2fe6cbdf49fd92b95912df1cf7d313c3e2230a333fdbcc                                                        0.0s
- => [internal] load git source git://github.com/docker/buildx                                                                                                                            0.4s
- => [internal] load metadata for docker.io/tonistiigi/xx:golang@sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537                                                  0.0s
- => [internal] load metadata for docker.io/library/golang:1.16-alpine                                                                                                                    0.3s
- => [xgo 1/1] FROM docker.io/tonistiigi/xx:golang@sha256:6f7d999551dd471b58f70716754290495690efa8421e0a1fcf18eb11d0c0a537                                                                0.0s
- => [gobase 1/4] FROM docker.io/library/golang:1.16-alpine@sha256:3411aef9ae9cb0fe3534fe2a4d1a9745d952d9a5ed1e20a11ff10549731156e8                                                       0.0s
- => CACHED [gobase 2/4] COPY --from=xgo / /                                                                                                                                              0.0s
- => CACHED [gobase 3/4] RUN apk add --no-cache file git                                                                                                                                  0.0s
- => CACHED [gobase 4/4] WORKDIR /src                                                                                                                                                     0.0s
+❯ DOCKER_HOST=ssh://othermachine DOCKER_BUILDKIT=1 docker build --platform=local -o . https://github.com/docker/buildx.git
+[+] Building 3.7s (17/17) FINISHED                                                                                                                                                            
+ => CACHED [internal] load git source https://github.com/docker/buildx.git                                                                                                               0.5s
+ => resolve image config for docker.io/docker/dockerfile:1.3                                                                                                                             0.9s
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                                                                         0.0s
+ => docker-image://docker.io/docker/dockerfile:1.3@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                                               0.0s
+ => [internal] load metadata for docker.io/library/golang:1.17-alpine                                                                                                                    0.8s
+ => [internal] load metadata for docker.io/tonistiigi/xx:1.0.0                                                                                                                           0.6s
+ => [auth] tonistiigi/xx:pull token for registry-1.docker.io                                                                                                                             0.0s
+ => [auth] library/golang:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [xx 1/1] FROM docker.io/tonistiigi/xx:1.0.0@sha256:494fa8488689d499edfaa16dba5922bc2b8cdfcb220bf884354aecbc1f2d8996                                                                  0.0s
+ => [golatest 1/1] FROM docker.io/library/golang:1.17-alpine@sha256:b48997f9a0479c9707298621acbcccb9158eb46c091d5123ae65ce5e791fa2cf                                                     0.0s
+ => CACHED [gobase 1/3] COPY --from=xx / /                                                                                                                                               0.0s
+ => CACHED [gobase 2/3] RUN apk add --no-cache file git                                                                                                                                  0.0s
+ => CACHED [gobase 3/3] WORKDIR /src                                                                                                                                                     0.0s
  => CACHED [buildx-version 1/1] RUN --mount=target=.   PKG=github.com/docker/buildx VERSION=$(git describe --match 'v[0-9]*' --dirty='.m' --always --tags) REVISION=$(git rev-parse HEA  0.0s
- => CACHED [buildx-build 1/1] RUN --mount=target=. --mount=target=/root/.cache,type=cache   --mount=target=/go/pkg/mod,type=cache   --mount=source=/tmp/.ldflags,target=/tmp/.ldflags,f  0.0s
+ => CACHED [buildx-build 1/1] RUN --mount=type=bind,target=.   --mount=type=cache,target=/root/.cache   --mount=type=cache,target=/go/pkg/mod   --mount=type=bind,source=/tmp/.ldflags,  0.0s
  => CACHED [binaries-unix 1/1] COPY --from=buildx-build /usr/bin/buildx /                                                                                                                0.0s
- => exporting to client                                                                                                                                                                  1.4s
- => => copying files 57.09MB                                                                                                                                                             1.4s
+ => exporting to client                                                                                                                                                                  1.2s
+ => => copying files 47.80MB                                                                                                                                                             1.2s
 ```
 
 > I cheated though: this does use a beefier machine but I'm only showing the run which used caching best
 
 ```shell
-# sha256sum buildx
-c941337da6bf9503645e63cd6648b2ee97ae4e0d312faf40473446a05b27d539  buildx
+❯ sha256sum buildx
+693a6128fb1ad5c7c598a02599111690f8ec89d6d24c3d86b59dd64286edb931  ./buildx
 ```
 
 And, if you are careful enough or you're given the right tools, you should achieve [hermetic / deterministic / reproducible builds](https://reproducible-builds.org/)!
