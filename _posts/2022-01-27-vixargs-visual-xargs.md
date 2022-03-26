@@ -2,7 +2,7 @@
 published: true
 title: 'vixargs: vi[sual] xargs'
 layout: post
-categories: [projects]
+categories: [projects, buildkit]
 permalink: vixargs-visual-xargs
 ---
 
