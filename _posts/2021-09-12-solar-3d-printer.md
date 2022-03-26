@@ -399,3 +399,31 @@ https://www.britannica.com/science/compound-dune
 	https://en.wikipedia.org/wiki/Ammophila_arenaria
 https://www.sciencedirect.com/science/article/abs/pii/S0070457107100042
 [13, Suitability of Recycled Glass Cullet as Artificial Dune Fill along Coastal Environments](https://www.researchgate.net/publication/236962695_Suitability_of_Recycled_Glass_Cullet_as_Artificial_Dune_Fill_along_Coastal_Environments)
+
+cassegrain-schmidt solar concentrator
+[Why is this Space Telescope so Tiny?](https://www.youtube.com/watch?v=HxwhCmO90UQ)
+[12, Cassegrain Solar Concentrator System for ISRU Material Processing](https://ntrs.nasa.gov/citations/20120004046)
+[08, Innovative design of cassegrain solar concentrator system for indoor illumination utilizing chromatic aberration to filter out ultraviolet and infrared in sunlight](https://sci-hub.ru/10.1016/j.solener.2008.12.013)
+https://www.researchgate.net/figure/Cassegrain-solar-concentrator-for-high-temperature-regolith-processing-for-ISRU-oxygen_fig5_283152715
+https://mosaic-h2020.eu/scientific-publications/
+	https://www.youtube.com/watch?v=Wo55_kVMGNM
+https://www.mdpi.com/1996-1073/13/7/1816
+
+https://www.3fstudio.de/news
+	https://www.mae.ed.tum.de/en/cbm/about-us/staff-a-z/matthaeus-carla/
+		>>> when prototype is ready, to iterate
+		also: Julian +49 177 4838602 from TU Munich, works on clay+timber slabs
+
+lens support structure
+->	Profilé de carrelage intérieur Diall rond PVC noir lisse 23mmx250cm
+		https://www.castorama.fr/profile-de-carrelage-interieur-diall-rond-pvc-noir-lisse-23mmx250cm/3663602911838_CAFR.prd?storeId=1420
+	GAH PROFILÉ D'ARRÊT À CARRELAGE
+		https://www.manomano.fr/p/gah-profile-darret-a-carrelage-3343681
+	Profilé de finition aluminium L.2,50m H.6mm
+		https://www.google.com/shopping/product/4333842615611326270?q=PROFIL%C3%89+D%27ARR%C3%8AT+CARRELAGE&sxsrf=APq-WBtoxXcoxCZIXeepiX_AwJIZUi71UQ:1648063369914&biw=1536&bih=754&dpr=1.25&prds=eto:11807279368339208278_0,rsk:PC_12485619535725637494&sa=X&ved=0ahUKEwiZ6u2--tz2AhXMxoUKHQFHCToQ8gIIjgsoAA
+	Profilés de finition chrome pour panneau mural - 2 profilés de 10x5x2100 mm – FINISH MURAL CHROME
+		https://www.manomano.fr/p/profiles-de-finition-chrome-pour-panneau-mural-2-profiles-de-10x5x2100-mm-finish-mural-chrome-40984012
+
+
+**building strong is the backbone of society**
+
