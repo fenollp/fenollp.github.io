@@ -227,6 +227,9 @@ https://webcamtests.com/
 15EUR [TAKRINK Webcam 1080P Webcaméra Cybercaméra Ordinateur Microphone Intégré Port USB avec Couvercle de Webcam Trépied pour Chat Vidéo et Enregistrement](https://www.amazon.fr/TAKRINK-Cybercam%C3%A9ra-Ordinateur-Microphone-Enregistrement/dp/B08NX3MVBQ)
 30EUR grand angle=>all feets in picture [Webcam PC 1080p HD - eMeet Nova Webcam Streaming Mise au Point Automatique avec Double Microphone, Web caméra USB pour Ordinateur Portable, Grand Angle 96°, Plug & Play, pour Linux, Win10, Mac](https://www.amazon.fr/Webcam-1080p-Automatique-Microphone-Ordinateur/dp/B09B6SYG1M)
 
+https://github.com/commaai/openpilot/tree/31228ce5605b6ba231ac09e22fd41946bf80ab36/tools/webcam#run-openpilot-with-webcam-on-pc
+>[...] at least 720p and 78 degrees FOV (e.g. Logitech C920/C615)
+
 
 https://en.sandhelden.de/about-sustainibility
 
