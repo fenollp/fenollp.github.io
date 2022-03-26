@@ -2,7 +2,7 @@
 published: true
 title: Docker, BuildKit & DOCKER_HOST
 layout: post
-categories: [powerful-concepts, projects, probable-SaaS, docker_host]
+categories: [powerful-concepts, projects, probable-SaaS, docker_host, buildkit]
 permalink: docker-buildkit-docker_host
 ---
 

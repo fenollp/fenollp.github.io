@@ -2,7 +2,7 @@
 published: true
 title: Infinitely faster initial Rust builds with DOCKER_HOST (and BuildKit)
 layout: post
-categories: [much-wow, trusting-trust, probable-SaaS, Merkle-cache, docker_host]
+categories: [much-wow, trusting-trust, probable-SaaS, Merkle-cache, docker_host, buildkit]
 permalink: faster-rust-builds-docker_host
 ---
 
