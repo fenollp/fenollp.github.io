@@ -1,9 +1,10 @@
 debug:
+	mkdir -p _site
 	docker run --rm -it \
 	  -v "$$PWD":/srv/jekyll \
 	  -p 4000:4000 \
 	  jekyll/jekyll \
-	  jekyll serve --watch --drafts
+	  jekyll serve --watch --drafts --trace
 
 new.%:
 	touch _posts/$$(date +%F)-$*.md

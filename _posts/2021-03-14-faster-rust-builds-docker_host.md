@@ -26,7 +26,7 @@ Not demonstrated in that repo but supposedly supported is building binaries:
 ```shell
 $ DOCKER_BUILDKIT=1 docker build --platform=local --output=. --file=Cargo.toml .
 # or even:
-$ DOCKER_BUILDKIT=1 docker build --platform=local --output=. git://github.com/some/repo#master:sub/context
+$ DOCKER_BUILDKIT=1 docker build --platform=local --output=. https://github.com/some/repo.git#master:sub/context
 ```
 > > Note that using Docker context `sub/context` [isn't yet supported by BuildKit](https://github.com/moby/buildkit/issues/1684)...
 
