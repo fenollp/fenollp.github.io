@@ -49,6 +49,6 @@ for ((i=1; i<=$#; i++)); do
 done
 
 export DOCKER_HOST=ssh://cdg.oomphr.dev
-printf %s "$commands" | buildxargs
+printf "$commands" | buildxargs
 docker builder prune --keep-storage 20000000000 -f
 ```
