@@ -103,6 +103,10 @@ Notamment la simplification et optimisation du [design et de l'actuation des hé
 
 <p align="center">⁂</p>
 
+Les besoins hydrogene en TWh de la France décarbonée vue par le [Shift Project](https://theshiftproject.org):
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3AIZLrNGowg?start=1857" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Comparaison des densité énergétique de quelque molécules porteuses d'hydrogène:
 
 | Molecule(s) | MJ/kg | kWh/kg | source |
