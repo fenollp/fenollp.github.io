@@ -404,14 +404,7 @@ https://www.britannica.com/science/compound-dune
 https://www.sciencedirect.com/science/article/abs/pii/S0070457107100042
 [13, Suitability of Recycled Glass Cullet as Artificial Dune Fill along Coastal Environments](https://www.researchgate.net/publication/236962695_Suitability_of_Recycled_Glass_Cullet_as_Artificial_Dune_Fill_along_Coastal_Environments)
 
-cassegrain-schmidt solar concentrator
-[Why is this Space Telescope so Tiny?](https://www.youtube.com/watch?v=HxwhCmO90UQ)
-[12, Cassegrain Solar Concentrator System for ISRU Material Processing](https://ntrs.nasa.gov/citations/20120004046)
-[08, Innovative design of cassegrain solar concentrator system for indoor illumination utilizing chromatic aberration to filter out ultraviolet and infrared in sunlight](https://sci-hub.ru/10.1016/j.solener.2008.12.013)
-https://www.researchgate.net/figure/Cassegrain-solar-concentrator-for-high-temperature-regolith-processing-for-ISRU-oxygen_fig5_283152715
-https://mosaic-h2020.eu/scientific-publications/
-	https://www.youtube.com/watch?v=Wo55_kVMGNM
-https://www.mdpi.com/1996-1073/13/7/1816
+ref MOSAIC
 
 https://www.3fstudio.de/news
 	https://www.mae.ed.tum.de/en/cbm/about-us/staff-a-z/matthaeus-carla/
