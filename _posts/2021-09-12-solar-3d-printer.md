@@ -354,6 +354,7 @@ Jean-Pierre Merlet
 https://docs.lyceum.ml/dev/lyceumai/algorithms/naturalpolicygradient/
 
 [19, Control of a Cable-Driven Parallel Robot via Deep Reinforcement Learning](https://sci-hub.ru/downloads/2020-06-01/19/ma2019.pdf?rand=618b670bb68cd)
+https://github.com/IntelLabs/coach rlcoach
 
 https://github.com/RobotLocomotion/drake/tree/99e87e7a94158a591c9b1cdd6255109f3dd3a723/examples/multibody/strandbeest/model
 
