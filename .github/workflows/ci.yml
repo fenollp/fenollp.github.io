@@ -16,8 +16,9 @@ jobs:
       run: |
         pwd
         ls -lha .
+        grep -EIo 'assets/[^")]+' -r .
         set -o pipefail
-        grep -Eo 'assets/[^")]+' -r . | \
+        grep -EIo 'assets/[^")]+' -r . | \
           grep -v .github/workflows/ci.yml | \
           cut -d: -f2 | \
           sort -u | \
