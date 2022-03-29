@@ -14,12 +14,9 @@ jobs:
 
     - name: Find missing assets
       run: |
-        pwd
-        ls -lha .
-        grep -EIo 'assets/[^")]+' -r .
         set -o pipefail
         grep -EIo 'assets/[^")]+' -r . | \
-          grep -v .github/workflows/ci.yml | \
+          grep -Fv .github/workflows/ci.yml | \
           cut -d: -f2 | \
           sort -u | \
           grep -v assets/css/layout.css | \
