@@ -14,4 +14,9 @@ jobs:
 
     - name: Find missing assets
       run: |
-        git grep -o 'assets/[^")]+' | cut -d: -f2 | sort -u | grep -v assets/css/layout.css | while read -r p; do echo "$p"; if ! [[ -r "$p" ]]; then echo nay; fi; done
+        git grep -o 'assets/[^")]+' | \
+          grep -v .github/workflows/ci.yml | \
+          cut -d: -f2 | \
+          sort -u | \
+          grep -v assets/css/layout.css | \
+          while read -r p; do echo "$p"; if ! [[ -r "$p" ]]; then exit 1; fi; done

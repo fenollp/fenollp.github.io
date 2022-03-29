@@ -9,7 +9,7 @@ permalink: solar-3d-printer
 Following up on [this hastily edited post](https://fenollp.github.io/concentrated-solar-for-infrastructure-and-fuel) about using the Sun to extract some form of hydrogen and to decarbonate part of the construction industry, I present this *Solar Desert Sand Vitrifier* I have been working on.
 
 ![MuJoCo simulation](./assets/sha256/6cfb26c4ab7dd416e081ab41745524a28ecf219222d4b57b2e8903f277a859f5.png)
-[Link to simulation code](./assets/simulation_v0.zip) and [to the simulator: MuJoCo](https://mujoco.org/).
+[Link to simulation code](https://github.com/fenollp/solar-desert-sand-vitrifier/tree/61219d88fccb471e1ac77019ed788ead39c79db9) and [to the simulator: MuJoCo](https://mujoco.org/).
 
 
 ## Briefly
