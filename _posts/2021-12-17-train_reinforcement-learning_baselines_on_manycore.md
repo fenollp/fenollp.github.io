@@ -1,5 +1,4 @@
 ---
-published: true
 title: Train reinforcement learning baselines on manycore
 layout: post
 categories: [projects, rl, gym, docker_host]

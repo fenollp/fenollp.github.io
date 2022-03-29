@@ -1,5 +1,4 @@
 ---
-published: true
 title: Infinitely faster initial Rust builds with DOCKER_HOST (and BuildKit)
 layout: post
 categories: [much-wow, trusting-trust, probable-SaaS, Merkle-cache, docker_host, buildkit]
@@ -65,14 +64,58 @@ I'm obviously not a genius. Here are some of other people's take on this:
 * [5x Faster Rust Docker Builds with cargo-chef](https://www.lpalmieri.com/posts/fast-rust-docker-builds/)
 	* [A cargo-subcommand to speed up Rust Docker builds using Docker layer caching.](https://github.com/LukeMathWalker/cargo-chef)
 	* note how it only caches dependencies, maybe even just the public ones
-* [Mozillas's sccache is ccache with cloud storage](https://github.com/mozilla/sccache)
+* [Mozillas's `sccache` is `ccache` with cloud storage](https://github.com/mozilla/sccache)
 * [Gradle's Build Cache](https://docs.gradle.org/current/userguide/build_cache.html)
 	* a (centralized) cache is provided *for money*
 		* **Did we just find a[nother] financial incentive to support developer communities?**
 * [Nix's Binary Cache](https://nixos.wiki/wiki/Binary_Cache)
 	* see also [Cachix](https://cachix.org/)
 
-## private code & security
+### Towards a distributed crate cache
+
+cf [rust-lang/cargo#1997](https://github.com/rust-lang/cargo/issues/1997) which mentions `sccache`.
+
+Building Rust code with `cargo` and verbosity toggled on, one sees `rustc` calls such as:
+```shell
+❯ cargo --verbose install cargo-edit
+# ...
+rustc \
+    --crate-name autocfg $HOME/.cargo/registry/src/github.com-1ecc6299db9ec823/autocfg-1.1.0/src/lib.rs \
+    --error-format=json \
+    --json=diagnostic-rendered-ansi,future-incompat \
+    --crate-type lib \
+    --emit=dep-info,metadata,link \
+    -C embed-bitcode=no \
+    -C debug-assertions=off \
+    -C metadata=6e4def821aa49e9d \
+    -C extra-filename=-6e4def821aa49e9d \
+    --out-dir $PWD \
+    -L dependency=$PWD \
+    --cap-lints allow
+# which produces the files
+# -rw-rw-r-- autocfg-6e4def821aa49e9d.d
+# -rw-rw-r-- libautocfg-6e4def821aa49e9d.rlib
+# -rw-rw-r-- libautocfg-6e4def821aa49e9d.rmeta
+```
+which builds a crate.
+These arguments,
+* plus what crate features are requested,
+* plus whether a `build.rs` file is involved,
+* plus the Rust toolchain versions or hashes,
+* plus hashes of all OS-specific libs and binaries that some crates rely on,
+* ~~plus ???~~
+
+should provide enough information to build a crate's cache key (humongous caveat: *in hopefully most cases*).
+
+From there it's hermetic builds, content-addressable storage and distributed compilation turtles all the way down. Easy!
+
+Figuring out a crate's cache key depends on that project's specific build plan which itself might depend on some environment variables, the version of the current shell... in short once a crate relies on a `build.rs` file for compilation (meaning some non-cargo/rustc code from the Internet gets executed on your machine!) all cache key bets are off.
+
+Caching crates should be possible for some (most?) crates, but not these ones anyway.
+
+`RUSTC_WRAPPER` [setting](https://doc.rust-lang.org/cargo/reference/config.html#buildrustc-wrapper) should help get there. Although looking at `sccache`'s [caveats](https://github.com/mozilla/sccache/tree/68a6aa8a978bafe5541c35d68dc36f485c56e1fc#known-caveats)...
+
+## Private code & security
 
 These are the privacy and security concerns I can see from my echo-chamber-slash-comfy-chair:
 * Building non-public code / private dependencies

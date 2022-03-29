@@ -1,5 +1,4 @@
 ---
-published: true
 title: Boosting phytoplankton growth as a carbon sequestration method
 layout: post
 categories: [biogeochemistry, sequestration, plankton]
@@ -133,3 +132,5 @@ Follow [Prof. Alessandro Tagliabue `"ocean biogeochemical cycles and life in the
 [2017, Assessing ocean alkalinity for carbon sequestration](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016RG000533)
 
 [Organic PhotoVoltaics: transparent & less polluting than non-organic PV](https://en.asca.com/latest-news/focus-on/focus-on-the-transparency-of-the-asca-film/)
+
+american.edu [Fact Sheet: Ocean Alkalinization](https://www.american.edu/sis/centers/carbon-removal/fact-sheet-ocean-alkalinization.cfm) and related: [**Project Vesta**](https://www.vesta.earth/)'s *magnificent website*
