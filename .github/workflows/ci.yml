@@ -14,6 +14,8 @@ jobs:
 
     - name: Find missing assets
       run: |
+        pwd
+        ls -lha .
         git grep -o 'assets/[^")]+'
         git grep -o 'assets/[^")]+' | \
           grep -v .github/workflows/ci.yml | \
