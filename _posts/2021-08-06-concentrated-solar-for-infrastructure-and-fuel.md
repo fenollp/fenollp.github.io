@@ -1,5 +1,4 @@
 ---
-published: true
 title: Concentrated Solar for Infrastructure and Fuel
 layout: post
 categories: [solar, power, sustainable, solarpunk, post-scarcity]

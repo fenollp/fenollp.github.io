@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+
+  ci:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Find missing assets
+      run: |
+        git grep -o 'assets/[^")]+' | cut -d: -f2 | sort -u | grep -v assets/css/layout.css | while read -r p; do echo "$p"; if ! [[ -r "$p" ]]; then echo nay; fi; done

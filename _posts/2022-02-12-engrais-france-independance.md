@@ -1,5 +1,4 @@
 ---
-published: true
 title: "Agriculture & engrais azotés: vers l'indépendance de la France sur les imports énergétiques"
 layout: post
 categories: [solar, power, sustainable, solarpunk, post-scarcity]

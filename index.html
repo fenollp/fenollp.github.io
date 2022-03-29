@@ -4,9 +4,15 @@ title: squint your mind enough
 ---
 {% for post in site.posts %}
 <h2 class="post-title-link">
+    {% if post.wip %}
+    ※&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
+    {% else %}
     <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
 </h2>
 <div class="mini-meta">
     {{ post.date | date_to_string }}
 </div>
 {% endfor %}
+
+<p>※: this is an ever-expanding / updating post i.e a work in progress, even more so than the others anyway.</p>

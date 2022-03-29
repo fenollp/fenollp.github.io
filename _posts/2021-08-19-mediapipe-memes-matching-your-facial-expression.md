@@ -1,5 +1,4 @@
 ---
-published: true
 title: 'MediaPipe tutorial: Find memes matching your facial expression 😮'
 layout: post
 categories: [mediapipe, powder.gg, memes, tensorflow, opencv, inference, ios]

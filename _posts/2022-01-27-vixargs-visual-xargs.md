@@ -1,5 +1,4 @@
 ---
-published: true
 title: 'vixargs: vi[sual] xargs'
 layout: post
 categories: [projects, buildkit]
