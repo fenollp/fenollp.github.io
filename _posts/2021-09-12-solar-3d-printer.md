@@ -1,5 +1,5 @@
 ---
-published: true
+wip: true
 title: "Solar 3D Printer: my take on Markus Kayser's Solar Sinter"
 layout: post
 categories: [solar, printer, sustainable, solarpunk, vitrifier]
