@@ -355,6 +355,7 @@ https://docs.lyceum.ml/dev/lyceumai/algorithms/naturalpolicygradient/
 
 [19, Control of a Cable-Driven Parallel Robot via Deep Reinforcement Learning](https://sci-hub.ru/downloads/2020-06-01/19/ma2019.pdf?rand=618b670bb68cd)
 https://github.com/IntelLabs/coach rlcoach
+https://www.gshi.me/blog/NeuralControl/
 
 https://github.com/RobotLocomotion/drake/tree/99e87e7a94158a591c9b1cdd6255109f3dd3a723/examples/multibody/strandbeest/model
 
@@ -424,4 +425,8 @@ lens support structure
 
 **building strong is the backbone of society**
 
+frame
 Truffaut support bâton 180cm 16mm 12x3.99€
+70EUR Tonnelle pliante 3 x 3 M - Tecto Bleu - tente de jardin Pop UP, Pergola pliable, Barnum
+	https://www.google.com/shopping/product/11279253279860043085?q=tente+barnum+pliable&hl=en&sxsrf=APq-WBs44_rrZxhErKQ3jyugey8dOzr8Vw:1648650231975&uact=5&oq=tente+barnum+pliable&gs_lcp=Cgtwcm9kdWN0cy1jYxADMgYIABAWEB4yCAgAEBYQHhAYMggIABAWEB4QGDIICAAQFhAeEBgyCAgAEBYQHhAYMggIABAWEB4QGDIICAAQFhAeEBgyCAgAEBYQHhAYMggIABAWEB4QGDoECAAQQzoFCAAQgAQ6BAgAEBg6BAgAEBM6CAgAEBYQHhATOgoIABAWEB4QExAYSgQIQRgBUPUEWLkjYNAkaANwAHgAgAGCAYgBvAqSAQQxOC4xmAEAoAEBwAEB&sclient=products-cc&prds=eto:12845507702489222954_0,rsk:PC_9907812213786617354&sa=X&ved=0ahUKEwjN2cHjhO72AhWD4YUKHfGZDK4Q8gIIjAooAA
+	https://www.leroymerlin.fr/produits/terrasse-jardin/parasol-tonnelle-et-store/tonnelle-pergola/tonnelle-et-pergola-autoportante/tonnelle-pliante-3-x-3-m-tecto-bleu-tente-de-jardin-pop-up-pergola-pliable-barnum-9m2-82931846.html?Megaboost
