@@ -134,3 +134,5 @@ Follow [Prof. Alessandro Tagliabue `"ocean biogeochemical cycles and life in the
 [Organic PhotoVoltaics: transparent & less polluting than non-organic PV](https://en.asca.com/latest-news/focus-on/focus-on-the-transparency-of-the-asca-film/)
 
 american.edu [Fact Sheet: Ocean Alkalinization](https://www.american.edu/sis/centers/carbon-removal/fact-sheet-ocean-alkalinization.cfm) and related: [**Project Vesta**](https://www.vesta.earth/)'s *magnificent website*
+
+theguardian.com [How do you deal with 9m tonnes of suffocating seaweed?](https://www.theguardian.com/environment/2020/jun/30/how-do-you-deal-with-9m-tonnes-of-suffocating-seaweed-aoe)
