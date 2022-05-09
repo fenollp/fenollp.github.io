@@ -45,6 +45,10 @@ This turned out pretty expensive: 250EUR/piece, 500EUR shipping to EU, 120EUR cu
 
 Again, bulk pricing is required here if I ever want to achieve less-than-a-thousand euros per machine...
 
+ultra thin lenses
+* https://youtu.be/CT_9EyOCivU?t=23
+* https://www.solarbrother.com/en/buy/fresnel-lens-xl/
+
 
 ## Large print volume
 
