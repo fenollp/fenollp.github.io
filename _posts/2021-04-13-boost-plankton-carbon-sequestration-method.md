@@ -136,3 +136,5 @@ Follow [Prof. Alessandro Tagliabue `"ocean biogeochemical cycles and life in the
 american.edu [Fact Sheet: Ocean Alkalinization](https://www.american.edu/sis/centers/carbon-removal/fact-sheet-ocean-alkalinization.cfm) and related: [**Project Vesta**](https://www.vesta.earth/)'s *magnificent website*
 
 theguardian.com [How do you deal with 9m tonnes of suffocating seaweed?](https://www.theguardian.com/environment/2020/jun/30/how-do-you-deal-with-9m-tonnes-of-suffocating-seaweed-aoe)
+
+[21, Saline Water-Based Mineralization Pathway for Gigatonne-Scale CO2 Management](https://pubs.acs.org/doi/full/10.1021/acssuschemeng.0c08561)

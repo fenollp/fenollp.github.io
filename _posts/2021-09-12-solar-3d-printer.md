@@ -273,7 +273,13 @@ future: CDPR
 
 # Name?
 not: Shai-Hulud https://dune.fandom.com/wiki/Shai-Hulud
-
+not: the drej
+le peuple des dunes en breton https://geriafurch.bzh/fr/brfr/erin
+	* dune de sable / dune sablonneuse : erin
+	* sable fin : traezh munut
+	* sable / sable maritime / sable de mer : traezh
+	* dune : tevenn
+Voir le monde dans un grain de sable ~ WB
 
 https://www.amazon.com/MegaCast-Graphite-Crucibles-Refining-Aluminum/dp/B075CT9FLX/
 EUR11 [Moule De Fonderie De Fonte De Coulée De Graphite De Grande Pureté De Werse Pour L'Or Et L'Argent - 750G](https://www.amazon.fr/Fonderie-Coul%C3%A9e-Graphite-Werse-LArgent/dp/B07HG5Z62M)
@@ -435,4 +441,84 @@ Truffaut support bâton 180cm 16mm 12x3.99€
 	https://www.google.com/shopping/product/11279253279860043085?q=tente+barnum+pliable&hl=en&sxsrf=APq-WBs44_rrZxhErKQ3jyugey8dOzr8Vw:1648650231975&uact=5&oq=tente+barnum+pliable&gs_lcp=Cgtwcm9kdWN0cy1jYxADMgYIABAWEB4yCAgAEBYQHhAYMggIABAWEB4QGDIICAAQFhAeEBgyCAgAEBYQHhAYMggIABAWEB4QGDIICAAQFhAeEBgyCAgAEBYQHhAYMggIABAWEB4QGDoECAAQQzoFCAAQgAQ6BAgAEBg6BAgAEBM6CAgAEBYQHhATOgoIABAWEB4QExAYSgQIQRgBUPUEWLkjYNAkaANwAHgAgAGCAYgBvAqSAQQxOC4xmAEAoAEBwAEB&sclient=products-cc&prds=eto:12845507702489222954_0,rsk:PC_9907812213786617354&sa=X&ved=0ahUKEwjN2cHjhO72AhWD4YUKHfGZDK4Q8gIIjAooAA
 	https://www.leroymerlin.fr/produits/terrasse-jardin/parasol-tonnelle-et-store/tonnelle-pergola/tonnelle-et-pergola-autoportante/tonnelle-pliante-3-x-3-m-tecto-bleu-tente-de-jardin-pop-up-pergola-pliable-barnum-9m2-82931846.html?Megaboost
 
+parasol deporte
+	https://www.darty.com/nav/achat/maison_jardin/mobilier_de_jardin/parasol/alice_s_garden_parasol_deporte_carre_3x3m_hardelot_3x3m_rouge_manivelle_anti_retour_toile_deperlante_facile_a_utiliser__MK1220476904.html
+	https://www.darty.com/nav/achat/maison_jardin/mobilier_de_jardin/parasol/alice_s_garden_parasol_deporte_350cm_hardelot_coloris_gris_structure_anthracite_manivelle_anti_retour___MK974705071.html
+	https://www.darty.com/nav/achat/maison_jardin/mobilier_de_jardin/parasol/outsunny_parasol_rectangulaire_inclinable_bois_polyester_haute_densite_2l_x_1_5l_x_2_3h_m_gris_clair__MK399747197.html
+
 pieu vissé
+
+Manivelle anti-retour
+	Anti-reverse crank
+
+https://goo.gl/maps/hqaNupDDLT3Fbqx77
+
+https://www.youtube.com/watch?v=jVCiPTXYYu8 regolight
+
+https://github.com/jim-fx/plantarium
+* toprint/
+
+
+[Heliac.dk thin cheap lenses](https://static.wikia.nocookie.net/solarcooking/images/7/71/L15_Heliac_Solar_Cooker_Presentation.pdf/revision/latest?cb=20180315185906#page=8)
+| Focal length (cm) | Spot size (cm) | Length (cm) | Width (cm) | Weight (g) | Cost (€) |
+|---|---|---|---|---|---|
+| 200 | 8 | 140 | 109 | 300 | 10 |
+| 73 | 1 | 82 | 48 | 70 | 5 |
+
+
+
+# emergency shutdown
+lens top protection
+* https://www.youtube.com/watch?v=DBbG_yhcP9Q
+* https://www.youtube.com/watch?v=dwY8cJhAhgI
+
+
+# numbers
+* Heat production of magnifying glass
+	* https://physics.stackexchange.com/a/103039/267116
+	* solarbrother's lens:
+		* `f=200cm` => image radius is `200cm*10e-3 = 2cm` => 4cm2 (ideal) spot size (spec says 8cm)
+		* => `(1.05*1.41)/((2 * 10e-3)**2) * 1000` = `3.7MW/m2` ??
+	* NTKJ's 120cm focal lens:
+		* => `1.44cm2` spot size
+* Calculation of Solar Insolation
+	* https://www.pveducation.org/pvcdrom/properties-of-sunlight/calculation-of-solar-insolation
+
+
+# moving frame
+https://www.youtube.com/watch?v=SjRwflxpEEg
+
+
+# fresnel lens silicone mold
+* https://www.youtube.com/watch?v=As20UPia718
+* https://www.youtube.com/watch?v=mfAGivG9Koc
+
+# pulleys
+* [WINSINN GT2 Pulley 20 Teeth 8mm bore 6mm Width 20T Timing Belt Pulley Wheel Aluminum for 3D Printer (Pack of 5Pcs)](https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GMKW1C/ref=pd_bxgy_sccl_1/131-0002034-1252970)
+
+# powering steppers off
+* **stepper enable toggle fast**
+* https://forum.arduino.cc/t/stepper-control-with-multiple-momentary-toggles/555587/4
+* **stepper complete shutdown**
+	* https://electronics.stackexchange.com/questions/418686/power-down-sequencing-with-a-hard-power-switch-stepper-driver
+* https://marlinfw.org/docs/gcode/M018.html
+* **stepper disable shutdown**
+	* https://github.com/Klipper3d/klipper/issues/906
+* https://forum.arduino.cc/t/turning-off-a-stepper-motor-with-code-not-hardware/354506
+
+# rpi4 auto-join wifi list
+* https://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
+
+# heat reflector + windscreen
+* [ASR Outdoor 10 Panel Wind Shield Heat Reflector Compact Collapsible Aluminum Panels](https://www.amazon.com/ASR-Outdoor-Reflector-Collapsible-Removable/dp/B07CPGFN9F)
+* https://www.screwfix.com/p/radiator-reflector-foil-470mm-x-4m-1-88m/88629
+* https://www.wildernessshop.com.au/products/msr-heat-reflector-windscreen-all-models
+* **reflecteur mirolege**
+
+# xy cable system
+* **synchromesh drive system**
+* https://docs.google.com/spreadsheets/d/1M--jvOxUEVNc-NtEsor3uPZQsdXsPD1CKWxmc8fwLWI/edit#gid=1902140897
+* https://www.sdp-si.com/products/Timing-Belts-and-Cables/Synchromesh-Drive-Systems.php
+* [Very Large Cable Driven CoreXY Mechanism](https://reprap.org/forum/read.php?397,830177)
+	* [cables](https://vimeo.com/282957836) [belts](https://vimeo.com/286113087)
+	* [CoreXY Mechanism Layout and Belt Tensioning](https://drmrehorst.blogspot.com/2018/08/corexy-mechanism-layout-and-belt.html)

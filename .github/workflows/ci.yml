@@ -21,3 +21,5 @@ jobs:
           sort -u | \
           grep -v assets/css/layout.css | \
           while read -r p; do echo "$p"; if ! [[ -r "$p" ]]; then exit 1; fi; done
+
+# TODO https://github.com/filiph/linkcheck/tree/74f8cb0a3f779b3ad6ea936e8ee49ac6d8ec71a2#usage-github-action
