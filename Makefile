@@ -1,9 +1,12 @@
 debug:
 	mkdir -p _site
 	docker run --rm -it \
-	  -v "$$PWD":/srv/jekyll \
+	  -v "$$PWD":/srv/jekyll:Z \
 	  -p 4000:4000 \
-	  jekyll/jekyll \
+	  -e JEKYLL_UID=$$(id -u) \
+	  -e JEKYLL_GID=$$(id -g) \
+	  -e JEKYLL_ROOTLESS=1 \
+	  jekyll/jekyll:4.1.0 \
 	  jekyll serve --watch --drafts --trace
 
 new.%:
@@ -19,5 +22,5 @@ new.%:
 	$(EDITOR) $$(ls _posts/* -t | head -n1)
 
 clean:
-	$(if $(wildcard _site), rm -r _site)
-	$(if $(wildcard .jekyll-cache), rm -r .jekyll-cache)
+	$(if $(wildcard _site), rm -rf _site)
+	$(if $(wildcard .jekyll-cache), rm -rf .jekyll-cache)
