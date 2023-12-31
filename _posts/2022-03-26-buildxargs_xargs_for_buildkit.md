@@ -44,10 +44,15 @@ for ((i=1; i<=$#; i++)); do
     if [[ "$url" = *youtube* ]]; then
         ARGs="--format mp4 -- $url"
     fi
-    commands+=$(printf "docker build --build-arg ARGs='%s' --output=$HOME/ %s" "$ARGs" "$repo")"\n"
+    commands+=$(printf "docker build --build-arg ARGs='%s' --output=$HOME/ %s" "$ARGs" "$repo")
+    commands+=$'\n'
 done
 
-export DOCKER_HOST=ssh://cdg.oomphr.dev
-printf "$commands" | buildxargs
+if [[ "${DOCKER_HOST-unset}" = 'unset' ]]; then
+    export DOCKER_HOST=ssh://oomphy
+fi
+
+buildxargs <<<"$commands"
+
 docker builder prune --keep-storage 20000000000 -f
 ```
