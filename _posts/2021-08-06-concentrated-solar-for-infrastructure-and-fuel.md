@@ -25,17 +25,17 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * NH3 is energy dense: potential for carbonless gasoil fuel replacement
 * NH3 stores easily, unlike H2
 * pollution driven by Haber-Bosch process (making H2 from CH4/oil)
-* [21, Sustainable Ammonia Production Processes](https://www.frontiersin.org/articles/10.3389/fenrg.2021.580808/full)
-* [21, Cutting the cost of splitting water](https://www.psi.ch/en/science/scientific-highlights/cutting-the-cost-of-splitting-water)
+* [(2021) Sustainable Ammonia Production Processes](https://www.frontiersin.org/articles/10.3389/fenrg.2021.580808/full)
+* [(2021) Cutting the cost of splitting water](https://www.psi.ch/en/science/scientific-highlights/cutting-the-cost-of-splitting-water)
 
 ## Means
 
 ### Markus Kayser's Solar Sinter
 * ![sun melts sand](./assets/sha256/89dca751434c554586b59e44d775ece6c511e37beaf98b4710b74a1098633132.jpg)
-* [11, Markus Kayser's Solar Sinter](https://kayserworks.com/798817030644)
-* Thesis [17, Towards swarm-based design : distributed and materially-tunable digital fabrication across scales](https://dspace.mit.edu/handle/1721.1/115741)
+* [(2011) Markus Kayser's Solar Sinter](https://kayserworks.com/798817030644)
+* Thesis [(2017) Towards swarm-based design : distributed and materially-tunable digital fabrication across scales](https://dspace.mit.edu/handle/1721.1/115741)
 	* Page 41. Lens: 1.4 x 1.0 m, USD600
-* [12, Design of a Solar Sand Printer](https://essay.utwente.nl/69808/1/Design%20of%20a%20solar%20sand%20printer.pdf)
+* [(2012) Design of a Solar Sand Printer](https://essay.utwente.nl/69808/1/Design%20of%20a%20solar%20sand%20printer.pdf)
 
 ### Large Fresnel lenses
 * [1.1 x 1.1m @ CHF750](https://www.fruugoschweiz.com/square-shape-focal-length-fresnel-solar-lens/p-55977041-113481672?language=en&ac=croud)
@@ -48,16 +48,16 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * European Union's Horizon 2020 [RegoLight Project](https://regolight.eu/project-2/)
 
 ### Optical Fibers to conduct solar radiation
-* [16, Optical design of a Fresnel concentrating solar system for direct transmission of radiation through an optical fibre bundle](https://www.sciencedirect.com/science/article/abs/pii/S0038092X15006258)
+* [(2016) Optical design of a Fresnel concentrating solar system for direct transmission of radiation through an optical fibre bundle](https://www.sciencedirect.com/science/article/abs/pii/S0038092X15006258)
 	* *the average transmission per metre length of fibre is found to be 52%*
 	* *Two thirds of the loss is due to the absorption in the gaps between the individual fibres.*
 * [Luís Guerra Rosa](https://fenix.tecnico.ulisboa.pt/homepage/ist11630/research-interests)
 	* 2020: Cable-Heat: Low-angle incident beam for the use of optical fibre bundles to conduct concentrated solar radiation.
 * **kilowatt power over fiber POF**
-	* [20, Solar powered fiber laser for energy conversion applications](https://scholar.google.co.uk/citations?view_op=view_citation&hl=en&user=s2NGjygAAAAJ&sortby=pubdate&citation_for_view=s2NGjygAAAAJ%3AAFXcoJnoRH0C&tzom=-60)
-	* [11, Concentration Heating System with Optical Fiber Supply](https://www.sciencedirect.com/science/article/pii/S1876610211015025)
-	* [98, Fiber-optic solar energy transmission and concentration](https://www.researchgate.net/publication/229320300_Fiber-optic_solar_energy_transmission_and_concentration)
-* [07, Optical Fiber Tips and Their Applications](https://www.molex.com/mx_upload/superfamily/polymicro/pdfs/Optical_Fiber_Tips_and_Their_Applications_Nov_2007.pdf)
+	* [(2020) Solar powered fiber laser for energy conversion applications](https://scholar.google.co.uk/citations?view_op=view_citation&hl=en&user=s2NGjygAAAAJ&sortby=pubdate&citation_for_view=s2NGjygAAAAJ%3AAFXcoJnoRH0C&tzom=-60)
+	* [(2011) Concentration Heating System with Optical Fiber Supply](https://www.sciencedirect.com/science/article/pii/S1876610211015025)
+	* [(1998) Fiber-optic solar energy transmission and concentration](https://www.researchgate.net/publication/229320300_Fiber-optic_solar_energy_transmission_and_concentration)
+* [(2007) Optical Fiber Tips and Their Applications](https://www.molex.com/mx_upload/superfamily/polymicro/pdfs/Optical_Fiber_Tips_and_Their_Applications_Nov_2007.pdf)
 * **optical fiber daylighting system**
 	* [290 DS Tubular Skylight](https://www.solatube.com/residential/skylights/product-selection-guide/290-ds/)
 	* [Diamond Dome SUNPIPE](https://www.monodraught.com/shop-sunpipe/)
@@ -78,15 +78,15 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 		<!-- * ![4](https://emergingobjects.com/wp-content/uploads/2014/04/involute4.jpg) -->
 * [MARSHA AI SPACEFACTORY'S MARS HABITAT](https://www.aispacefactory.com/marsha)
 * **testing concrete properties**
-	* [19, Dynamic behavior of reinforced concrete slabs](https://onlinelibrary.wiley.com/doi/abs/10.1002/best.201800104)
-* [18, Thermal treatment of desert sand to produce construction material](https://www.researchgate.net/publication/323172869_Thermal_treatment_of_desert_sand_to_produce_construction_material)
+	* [(2019) Dynamic behavior of reinforced concrete slabs](https://onlinelibrary.wiley.com/doi/abs/10.1002/best.201800104)
+* [(2018) Thermal treatment of desert sand to produce construction material](https://www.researchgate.net/publication/323172869_Thermal_treatment_of_desert_sand_to_produce_construction_material)
 * **cost to transport sand**
 	* 15-20$ cost per cubic yard
 	* 50-150$ delivery cost
 
 ### Very high temperature nozzle
 * **3d printing deposit powder while fusing**
-* [15, MIT's Glass 3D printer](https://news.mit.edu/2015/3-d-printing-transparent-glass-0914)
+* [(2015) MIT's Glass 3D printer](https://news.mit.edu/2015/3-d-printing-transparent-glass-0914)
 	* alumina zircon silicone nozzle
 	* video: [Neri Oxman / Mediated Matter, MIT Media Lab - Glass](https://www.youtube.com/watch?v=6GaQtH1bhpo)
 * [High purity graphite crucible 20EUR](https://www.amazon.fr/puret%C3%A9-graphite-moulage-couvercle-argent%C3%A9/dp/B07LF8YTTL)
@@ -102,9 +102,9 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 	* stadium sizes already achieved
 * [Packages related to simulation and control of cable-driven parallel robots.](https://github.com/oKermorgant/cdpr)
 	* [Olivier Kermorgant](http://pagesperso.ls2n.fr/~kermorgant-o/)
-* [20, SISTEMA AUTOCALIBRABLE PARA PLATAFORMA ROBÓTICA MANIOBRADA MEDIANTE CABLES](https://www.researchgate.net/profile/Alfredo-Maussa/publication/343268337_SISTEMA_AUTOCALIBRABLE_PARA_PLATAFORMA_ROBOTICA_MANIOBRADA_MEDIANTE_CABLES/links/5fa60db8a6fdcc06241cc3a0/SISTEMA-AUTOCALIBRABLE-PARA-PLATAFORMA-ROBOTICA-MANIOBRADA-MEDIANTE-CABLES.pdf)
+* [(2020) SISTEMA AUTOCALIBRABLE PARA PLATAFORMA ROBÓTICA MANIOBRADA MEDIANTE CABLES](https://www.researchgate.net/profile/Alfredo-Maussa/publication/343268337_SISTEMA_AUTOCALIBRABLE_PARA_PLATAFORMA_ROBOTICA_MANIOBRADA_MEDIANTE_CABLES/links/5fa60db8a6fdcc06241cc3a0/SISTEMA-AUTOCALIBRABLE-PARA-PLATAFORMA-ROBOTICA-MANIOBRADA-MEDIANTE-CABLES.pdf)
 * [A Matlab library for cable driven parallel robots.](https://github.com/IRMA-LAB/cdpr_matlab)
-* [18, Development of a parametric cable driven planar robot](https://www.redalyc.org/journal/496/49659032006/html/)
+* [(2018) Development of a parametric cable driven planar robot](https://www.redalyc.org/journal/496/49659032006/html/)
 * [Hangprinter: cable-driven RepRap](https://hangprinter.org/)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jk4fhQvNoaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -112,8 +112,8 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * [Open-source Selective Laser Sintering](https://github.com/MillerLabFTW/OpenSLS)
 	* [OpenSLS Laser Sintering 3D Printer Made From Hacked Laser Cutter](http://diy3dprinting.blogspot.com/2016/04/opensls-laser-sintering-3d-printer-made.html)
 * **solar pumped laser**
-* [21, Laser Sintering on Sand Made 3D Printer](https://www.youtube.com/watch?v=IIlosHwpU4g)
-* [03, Direct laser sintering of a silica sand](https://www.sciencedirect.com/science/article/abs/pii/S0261306903001262)
+* [(2021) Laser Sintering on Sand Made 3D Printer](https://www.youtube.com/watch?v=IIlosHwpU4g)
+* [(2003) Direct laser sintering of a silica sand](https://www.sciencedirect.com/science/article/abs/pii/S0261306903001262)
 
 ### Sand Babel: Solar-Powered Twisting Skyscrapers 3D-Printed With Desert Sands
 * [14, article in worldarchitecture.org](https://worldarchitecture.org/authors-links/pmcnn/sand-babel-solar-powered-twisting-skyscrapers-3d-printed-with-desert-sands.html)
@@ -130,7 +130,7 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 * [Magnus Larsson: Turning dunes into architecture](https://www.youtube.com/watch?v=PXMJobWlXks)
 
 ### Vitrified desert sand
-* [14, Properties of Desert Sand and CMAS Glass (NASA)](https://ntrs.nasa.gov/citations/20140017770)
+* [**(2014) Properties of Desert Sand and CMAS Glass (NASA)**](https://ntrs.nasa.gov/citations/20140017770)
 	* Bulk density of CMAS glass was 2.69 g/cc
 	* *Young's modulus 92 GPa*
 	* *Shear modulus 36 GPa*
@@ -153,7 +153,7 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 	- Emissions de NOx: 2,0 kg
 		* *`(510*100)/(1176+105) = 39.8%` of materials + fuel is emited as CO2*
 		* *`(174*100)/1176 = 14.8%` of materials emited as CO2*
-* [54, Thermal decomposition of calcium sulfate](https://core.ac.uk/download/pdf/38909142.pdf)
+* [(1954) Thermal decomposition of calcium sulfate](https://core.ac.uk/download/pdf/38909142.pdf)
 	* *CaO, CO2, SO2, S2, H2S, CaS, H2O*
 * **=> potentially vitrifying desert sand emits 15-35% of its mass as CO2**
 	* **65-85% less than concrete**
@@ -169,20 +169,20 @@ Looking for low-carbon industrial-scale replacements to our CO2 emitting ways.
 	* Particle Size	0.06mm (60 micron)
 	* Volume (1kg)	2L, 2000cm^3, 122in^3
 * [Fast, high volume 3D printing tech](https://www.highspeedsinteringtechnology.com/)
-* [18, Sandhelden: tapping into the bathroom design market with 3D sand printing](https://www.3dprintingmedia.network/sandhelden-3d-sand-printing-sinks/)
+* [(2018) Sandhelden: tapping into the bathroom design market with 3D sand printing](https://www.3dprintingmedia.network/sandhelden-3d-sand-printing-sinks/)
 * manual cement block making machine [>800EUR](https://www.alibaba.com/pla/High-capacity-Trade-Assurance-manual-brick_1600100372123.html?mark=google_shopping&biz=pla&language=fr&pcy=FR&searchText=brick+making+machinery&src=sem_ggl&from=sem_ggl&cmpgn=12241681437&adgrp=117498985099&fditm=&tgt=pla-298190246337&locintrst=&locphyscl=9056144&mtchtyp=&ntwrk=u&device=c&dvcmdl=&creative=496016512722&plcmnt=&plcmntcat=&p1=&p2=&aceid=&position=&localKeyword=&gclid=Cj0KCQjwu7OIBhCsARIsALxCUaNLUfJS3WQeW-ARZTT21GdHcl_cwib5DKED3_LPyk8whSwc0cTayqgaAtOlEALw_wcB)
 * automated concrete blocks making machine [>10kUSD](https://french.alibaba.com/product-detail/QT4-15-block-making-machine-1600096903840.html?mark=google_shopping&seo=1)
-* [17, The Cronus: Mutli-Head 3D Printing](https://www.youtube.com/watch?v=TkEOMQ6rQ6s)
+* [(2017) The Cronus: Mutli-Head 3D Printing](https://www.youtube.com/watch?v=TkEOMQ6rQ6s)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TkEOMQ6rQ6s?start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Solar thermal H2 / NH3 production processes
-* [11, Solar Thermochemical Hydrogen Production Research (STCH): Thermochemical Cycle Selection and Investment Priority](https://www.energy.gov/sites/default/files/2014/03/f9/solar_thermo_h2.pdf)
+* [(2011) Solar Thermochemical Hydrogen Production Research (STCH): Thermochemical Cycle Selection and Investment Priority](https://www.energy.gov/sites/default/files/2014/03/f9/solar_thermo_h2.pdf)
 * **energy.gov** [Hydrogen Production: Thermochemical Water Splitting](https://www.energy.gov/eere/fuelcells/hydrogen-production-thermochemical-water-splitting)
 	* *long-term technology pathway, with potentially low or no greenhouse gas emissions*
-	* *Two examples of thermochemical water splitting cycles, the "direct" two-step cerium oxide thermal cycle and the "hybrid" copper chloride cycle, are illustrated in Figure 2. Typically direct cycles are less complex with fewer steps, but they require higher operating temperatures compared with the more complicated hybrid cycles.*
+	* *Typically direct cycles are less complex with fewer steps, but they require higher operating temperatures compared with the more complicated hybrid cycles.*
 * **Low CO2 Ammonia with electrochemistry, water splitting**
-	* [20, Electrification of Ammonia Synthesis](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Karthish-Manthiram.pdf)
+	* [(2020) Electrification of Ammonia Synthesis](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Karthish-Manthiram.pdf)
 		* *optimizing processes*
-	* [20, Building a sustainable industrial and energy infrastructure](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Tobias-Birwe.pdf)
+	* [(2020) Building a sustainable industrial and energy infrastructure](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Tobias-Birwe.pdf)
 		* *thyssenkrupp doing large scale electrolysis*
-	* [20, GREEN AMMONIA AT OIL & GAS SCALE](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Alex-Tancock-Keynote.pdf)
+	* [(2020) GREEN AMMONIA AT OIL & GAS SCALE](https://www.ammoniaenergy.org/wp-content/uploads/2020/12/Alex-Tancock-Keynote.pdf)
