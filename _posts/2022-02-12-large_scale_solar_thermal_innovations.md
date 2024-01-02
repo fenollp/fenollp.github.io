@@ -100,15 +100,12 @@ The [Yumen Xinneng CSP Plant](https://www.google.com/maps/place/Yumen+Xinneng+CS
 		and the CPC's may well equal or exceed that of the elements eliminated. The requirement that secondary size and cost be constrained
 		also limits the boundary of the heliostat field to the extent that, for a given aim point height,
 		typically half or less of the optimum power to the tower top receiver can be achieved in the beam-down configuration.
-
 * [(2015) Modeling of Beam Down Solar Concentrator and Final Optical Element Design](https://vikasmech.github.io/Master-s-Thesis/Master%27s%20Thesis_Vikas.pdf)
-
 * [(2015) Preliminary Optical, Thermal and Structural Design of a 100 kWth CSPonD Beam-down On-sun Demonstration Plant](https://doi.org/10.1016/j.egypro.2015.07.359)
-
 * [(2016) Validation of an optical model applied to the beam down CSP facility at the Masdar Institute Solar Platform](https://doi.org/10.1063/1.4949031)
-
 * [(2017) An Origami-Inspired Design of a Thermal Mixing Element Within a Concentrated Solar Power System](https://doi.org/10.1115/DETC2017-68360)
-
+* [(2023) A Novel Dual Receiver–Storage Design for Concentrating Solar Thermal Plants Using Beam-Down Optics](https://www.mdpi.com/1996-1073/16/10/4157)
+	* <img src="https://www.mdpi.com/energies/energies-16-04157/article_deploy/html/images/energies-16-04157-g001.png"/>
 * [(2023) Progress in beam-down solar concentrating systems](http://dx.doi.org/10.1016/j.pecs.2023.101085)
 
 Notable authors:

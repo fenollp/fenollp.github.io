@@ -5,29 +5,26 @@ categories: [biogeochemistry, sequestration, plankton]
 permalink: boosting-phytoplankton-growth-as-a-carbon-sequestration-method
 ---
 
+<img src="https://www.mccrone.com/wp-content/uploads/2015/04/Diatoms_WF_Fig01.jpg"/>
+
 How to...
 * give the world a better future
-* save the planet like ITER but closer to the sea
 * grow mangrove and trees, but in the ocean
 
 ## biggest carbon sequestration = ocean => plankton
 * also is base of food chain pyramid
 * look at [these magnificent diatoms](https://www.gettyimages.fr/photos/diatom?phrase=diatom&sort=mostpopular)
-* note CO2 is bad but water vapor is worse
-
 
 ## Ocean fertilization
 
-[2012, Can Adding Iron To Oceans Slow Global Warming?](https://www.npr.org/2012/07/18/156976147/can-adding-iron-to-oceans-slow-global-warming)
-> And those experiments pretty much ground to a halt a few years ago. A couple of companies swooped into this field, hoping to make money by sinking carbon and selling carbon credits. And critics started raising concerns.
+* [(2012) Can Adding Iron To Oceans Slow Global Warming?](https://www.npr.org/2012/07/18/156976147/can-adding-iron-to-oceans-slow-global-warming)
+    * *And those experiments pretty much ground to a halt a few years ago. A couple of companies swooped into this field, hoping to make money by sinking carbon and selling carbon credits. And critics started raising concerns.*
 
 **plankton captures 37Gt CO2/year**, helped by iron from whales' feces vertical movements between the sunlit surface and the Deep
 
-[2017, The Ocean: a Carbon Pump](https://www.ocean-climate.org/wp-content/uploads/2017/03/ocean-carbon-pump_07-2.pdf)
-
-[2019, Negative Emissions Technologies and Reliable Sequestration, A Research Agenda](https://www.nap.edu/catalog/25259/negative-emissions-technologies-and-reliable-sequestration-a-research-agenda) [Coastal Blue Carbon](https://www.ncbi.nlm.nih.gov/books/NBK541438/) [Slides](https://cmi.princeton.edu/wp-content/uploads/2019/12/Pacala-NAS-study-2019.pdf)
-
-[2019, Nature’s Solution to Climate Change](https://www.imf.org/external/pubs/ft/fandd/2019/12/natures-solution-to-climate-change-chami.htm)
+* [(2017) The Ocean: a Carbon Pump](https://www.ocean-climate.org/wp-content/uploads/2017/03/ocean-carbon-pump_07-2.pdf)
+* [(2019) Negative Emissions Technologies and Reliable Sequestration, A Research Agenda](https://www.nap.edu/catalog/25259/negative-emissions-technologies-and-reliable-sequestration-a-research-agenda) [Coastal Blue Carbon](https://www.ncbi.nlm.nih.gov/books/NBK541438/) [Slides](https://cmi.princeton.edu/wp-content/uploads/2019/12/Pacala-NAS-study-2019.pdf)
+* [(2019) Nature’s Solution to Climate Change](https://www.imf.org/external/pubs/ft/fandd/2019/12/natures-solution-to-climate-change-chami.htm)
 
 ![whale stats from IMF article](./assets/sha256/59d752d41310d5dbc052de468af946668748de175e236debe82b65f4384a96cc.jpg)
 
@@ -39,15 +36,12 @@ How to...
 * unknown unknowns
 
 Some papers say this seems balanceable:
-[2014, Ammonium Uptake by Phytoplankton Regulates Nitrification in the Sunlit Ocean](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4177112/)
-> However, preference for ammonium was group-specific, and it was observed mainly in green algae and cyanobacteria. In fact, cyanobacteria relied only on ammonium as their N-source. On the contrary, diatoms preferred nitrate, and did not respond to ammonium additions.
-
-[2011, Ammonium, nitrate and phytoplankton interactions in a freshwater tidal estuarine zone: potential effects of cultural eutrophication](https://link.springer.com/article/10.1007/s00027-011-0180-0)
-> or ammonia could be used as a regulator...
-
-
-[2017, Processes of coastal ecosystem carbon sequestration and approaches for increasing carbon sink](https://link.springer.com/article/10.1007/s11430-016-9010-9)
-> microorganisms (phytoplankton, bacteria, archaea, viruses, and protozoa), which did not receive much attention in the past, account for more than 90% of the total marine biomass and are the main contributors to blue carbon
+* [(2014) Ammonium Uptake by Phytoplankton Regulates Nitrification in the Sunlit Ocean](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4177112/)
+    * *However, preference for ammonium was group-specific, and it was observed mainly in green algae and cyanobacteria. In fact, cyanobacteria relied only on ammonium as their N-source. On the contrary, diatoms preferred nitrate, and did not respond to ammonium additions.*
+* [(2011) Ammonium, nitrate and phytoplankton interactions in a freshwater tidal estuarine zone: potential effects of cultural eutrophication](https://link.springer.com/article/10.1007/s00027-011-0180-0)
+    * *or ammonia could be used as a regulator...*
+* [(2017) Processes of coastal ecosystem carbon sequestration and approaches for increasing carbon sink](https://link.springer.com/article/10.1007/s11430-016-9010-9)
+    * *microorganisms (phytoplankton, bacteria, archaea, viruses, and protozoa), which did not receive much attention in the past, account for more than 90% of the total marine biomass and are the main contributors to blue carbon*
 
 ## DAC ~ Direct Air Capture --> store in water
 * capture car emissions in [city] tunnels with small amouts of sprinkled water in open circuit
@@ -60,17 +54,14 @@ Some papers say this seems balanceable:
 
 [https://en.wikipedia.org/wiki/Ocean_storage_of_carbon_dioxide#Iron_fertilization](https://en.wikipedia.org/wiki/Ocean_storage_of_carbon_dioxide#Iron_fertilization)
 
-[2011, The response of phytoplankton biomass to transient mixing events in the Southern Ocean](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011GL048498)
-> We find an unexpectedly large spatial variability in the nature of the chlorophyll‐a response to mixing events in both the observations and the model outputs and our results suggest that the degree of iron limitation (relative to light) seems to be instrumental in dictating these patterns.
-
-[17, The integral role of iron in ocean biogeochemistry](https://www.nature.com/articles/nature21058)
-> In this Review, we discuss how a recent increase in observational data for this trace metal has challenged the prevailing view of the ocean iron cycle. Instead of focusing on dust as the major iron source and emphasizing iron’s tight biogeochemical coupling to major nutrients, a more complex and diverse picture of the sources of iron, its cycling processes and intricate linkages with the ocean carbon and nitrogen cycles has emerged.
-
-[2018, Aerosol trace metal leaching and impacts on marine microorganisms](https://www.nature.com/articles/s41467-018-04970-7)
-> Metal dissolution from atmospheric aerosol deposition to the oceans is important in enhancing and inhibiting phytoplankton growth rates
-
-[2018, Anthropogenic combustion iron as a complex climate forcer](https://www.nature.com/articles/s41467-018-03997-0)
---> *industry already rejects enough water-soluble iron particles today to have an impact on atmospheric CO2 uptake*
+* [(2011) The response of phytoplankton biomass to transient mixing events in the Southern Ocean](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011GL048498)
+    * *We find an unexpectedly large spatial variability in the nature of the chlorophyll‐a response to mixing events in both the observations and the model outputs and our results suggest that the degree of iron limitation (relative to light) seems to be instrumental in dictating these patterns.*
+* [(2017) The integral role of iron in ocean biogeochemistry](https://www.nature.com/articles/nature21058)
+    * *In this Review, we discuss how a recent increase in observational data for this trace metal has challenged the prevailing view of the ocean iron cycle. Instead of focusing on dust as the major iron source and emphasizing iron’s tight biogeochemical coupling to major nutrients, a more complex and diverse picture of the sources of iron, its cycling processes and intricate linkages with the ocean carbon and nitrogen cycles has emerged.*
+* [(2018) Aerosol trace metal leaching and impacts on marine microorganisms](https://www.nature.com/articles/s41467-018-04970-7)
+    * *Metal dissolution from atmospheric aerosol deposition to the oceans is important in enhancing and inhibiting phytoplankton growth rates*
+* [(2018) Anthropogenic combustion iron as a complex climate forcer](https://www.nature.com/articles/s41467-018-03997-0)
+    * --> *industry already rejects enough water-soluble iron particles today to have an impact on atmospheric CO2 uptake*
 
 > It is estimated that about one-seventh of all iron production goes to replace the metal lost to corrosion
 
@@ -118,23 +109,22 @@ that assembles and survives waves not unlike these:
 [Ajouter du fer dans la mer permet-il de réduire l'effet de serre ?](https://controversciences.org/timelines/130)
 --> Basically: *risky endeavor, benefits unclear, requires more data*
 
-[16, How well do global ocean biogeochemistry models simulate dissolved iron distributions?](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015GB005289)
-> The way different models treat DFe scavenging has emerged as a key uncertainty that would benefit from stronger observational constraints. More detailed intermodel tests, particularly linked to process study data, are needed to assess the models' biological components.
-> Improving the quantitative understanding of iron cycling should be a major priority for ocean biogeochemistry research.
+* [(2016) How well do global ocean biogeochemistry models simulate dissolved iron distributions?](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015GB005289)
+    * *The way different models treat DFe scavenging has emerged as a key uncertainty that would benefit from stronger observational constraints. More detailed intermodel tests, particularly linked to process study data, are needed to assess the models' biological components.*
+    * *Improving the quantitative understanding of iron cycling should be a major priority for ocean biogeochemistry research.*
+* [(2019) The future of Blue Carbon science](https://www.nature.com/articles/s41467-019-11693-w)
+    * *At the same time, a variety of research approaches and methods, comparison of data, and verification of conclusions are needed, and the needs for marine carbon sink protocols are emerging. Thus we need to propose a framework of core measurements of carbon sink for peers to work on, towards the development of a standard protocol of multiple disciplines with comparable parameters*
 
-[2019, The future of Blue Carbon science](https://www.nature.com/articles/s41467-019-11693-w)
-> At the same time, a variety of research approaches and methods, comparison of data, and verification of conclusions are needed, and the needs for marine carbon sink protocols are emerging. Thus we need to propose a framework of core measurements of carbon sink for peers to work on, towards the development of a standard protocol of multiple disciplines with comparable parameters
+## Miscellaneous
 
-## misc
+* Follow [Prof. Alessandro Tagliabue `"ocean biogeochemical cycles and life in the seas"`](https://scholar.google.co.uk/citations?hl=en&user=CqTonRwAAAAJ&view_op=list_works&sortby=pubdate) on [Twitter @altagliabue](https://twitter.com/altagliabue)
 
-Follow [Prof. Alessandro Tagliabue `"ocean biogeochemical cycles and life in the seas"`](https://scholar.google.co.uk/citations?hl=en&user=CqTonRwAAAAJ&view_op=list_works&sortby=pubdate) on [Twitter @altagliabue](https://twitter.com/altagliabue)
+* [(2017) Assessing ocean alkalinity for carbon sequestration](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016RG000533)
 
-[2017, Assessing ocean alkalinity for carbon sequestration](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016RG000533)
+* [Organic PhotoVoltaics: transparent & less polluting than non-organic PV](https://en.asca.com/latest-news/focus-on/focus-on-the-transparency-of-the-asca-film/)
 
-[Organic PhotoVoltaics: transparent & less polluting than non-organic PV](https://en.asca.com/latest-news/focus-on/focus-on-the-transparency-of-the-asca-film/)
+* american.edu [Fact Sheet: Ocean Alkalinization](https://www.american.edu/sis/centers/carbon-removal/fact-sheet-ocean-alkalinization.cfm) and related: [**Project Vesta**](https://www.vesta.earth/)'s *magnificent website*
 
-american.edu [Fact Sheet: Ocean Alkalinization](https://www.american.edu/sis/centers/carbon-removal/fact-sheet-ocean-alkalinization.cfm) and related: [**Project Vesta**](https://www.vesta.earth/)'s *magnificent website*
+* theguardian.com [How do you deal with 9m tonnes of suffocating seaweed?](https://www.theguardian.com/environment/2020/jun/30/how-do-you-deal-with-9m-tonnes-of-suffocating-seaweed-aoe)
 
-theguardian.com [How do you deal with 9m tonnes of suffocating seaweed?](https://www.theguardian.com/environment/2020/jun/30/how-do-you-deal-with-9m-tonnes-of-suffocating-seaweed-aoe)
-
-[21, Saline Water-Based Mineralization Pathway for Gigatonne-Scale CO2 Management](https://pubs.acs.org/doi/full/10.1021/acssuschemeng.0c08561)
+* [(2021) Saline Water-Based Mineralization Pathway for Gigatonne-Scale CO2 Management](https://pubs.acs.org/doi/full/10.1021/acssuschemeng.0c08561)
