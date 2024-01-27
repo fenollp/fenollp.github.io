@@ -18,11 +18,13 @@ https://www.youtube.com/watch?v=Gh9lOyddqbY
 https://users.rust-lang.org/t/we-need-a-great-general-refactoring-tool/103985/13
 
 
+ohwow https://gitlab.inria.fr/lawall/patchparse4
+
 ### suggest better collection given apparent use
 
 Notice an iterator looking into another one
 If it's doing things a certain special way
-Suggest a set impl
+Suggest a set impl so `O(n) --> O(1)`
 
 ```rust
  /// List FDB entries that are the result of a replication (i.e. on a veth)
@@ -88,9 +90,6 @@ pub async fn list_replicated_macs(rtnl: &Netlink, links: &LinkMap) -> Result<Vec
 #### Attempt #1
 
 ```diff
-// O(n) --> O(1)
-// ./target/release/cfr --coccifile should_be_using_hashset.cocci src/should_be_using_hashset.rs
-
 @@
 identifier c;
 expression a, b, d;
@@ -115,28 +114,63 @@ expression a, b, d;
 
 #### Attempt #2
 
+```shell
+cargo run --locked --frozen --offline --release -- --coccifile should_be_using_hashset.cocci src/should_be_using_hashset.rs
+./target/release/cfr --coccifile should_be_using_hashset.cocci src/should_be_using_hashset.rs
+```
+
 ```diff
-// O(n) --> O(1)
-// ./target/release/cfr --coccifile should_be_using_hashset.cocci src/should_be_using_hashset.rs
-
 @@
-identifier c;
-expression a, b, d;
+identifier xs, x, c;
+expression items;
+Iterator it;
 @@
 
--    let a = b;
-+    let a = b.iter().collect::<::std::collections::HashSet<_>>();
+     let xs =
+-             items;
++             items.iter().collect::<HashSet<_>>();
 
      ...
 
-     d.into_iter().filter_map(|c| {
+     it.filter_map(|x| {
          ...
 
--        if a.any(|x| x == c) {
-+        if a.contains(&c) {
+         if xs.
+-              any(|c| c == x)
++              contains(&x)
+         {
              ...
          }
 
          ...
-     }).collect()
+     })
+```
+
+---
+
+```rust
+#[test]
+fn collecting_needlessly() {
+    use std::collections::HashMap;
+
+    let hmap = HashMap::from([('a', 42)]);
+    for item in hmap.keys().copied().collect::<Vec<_>>() { // <--
+        let _ = item;
+    }
+}
+```
+
+```diff
+// cargo run --locked --frozen --offline --release -- --no-parallel --coccifile src/tests/needless_collect.cocci src/tests/needless_collect.rs
+
+@@
+Iterator it;
+identifier x;
+@@
+
+     for x in it
+-                 .copied().collect::<Vec<_>>()
+     {
+         ...
+     }
 ```

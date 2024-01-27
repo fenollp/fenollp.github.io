@@ -23,11 +23,11 @@ permalink: Polishing_Rust
 ---
 
 
-# rust best async UX
-
-## A new edition that changes async sugar
+# Colorless async in Rust
 
 Sprinkling async/.await some places is suboptimal when done by humans, let's turn it around!
+
+Could be introduced in a new edition.
 
 ### Common use
 
