@@ -22,47 +22,6 @@ permalink: Polishing_Rust
 
 ---
 
-rust clippy coccinelle
-
-## suggest better collection given apparent use
-
-Notice an iterator looking into another one
-If it's doing things a certain special way
-Suggest a set impl
-
- /// List FDB entries that are the result of a replication (i.e. on a veth)
- pub async fn list_replicated_macs(rtnl: &Netlink, links: &LinkMap) -> Result<Vec<FdbReplicated>> {
-+    let link_macs = links.values().map(|link| link.mac).collect::<HashSet<_>>();
-     let neighs = rtnl.get_bridge_neighs().await?;
-
-     let neighs = neighs.into_iter().filter_map(|neigh| {
-         // Ensure the neigh has a VLAN (or not, we don't care, it's just to deduplicate the neigh)
-         neigh.vlan?;
-         // Ignore MAC if it's the one of an interface itself
--        if links.values().any(|link| link.mac.as_slice() == neigh.mac) {
-+        if link_macs.contains(&neigh.mac) {
-             return None;
-         }
-         // Ignore multicast neighbors
-         if neigh.is_multicast() {
-             return None;
-         }
-
-         match links.get(&neigh.ifindex) {
-             Some(Link::Veth(veth)) if veth.base.master.is_some() => {
-                 Some((veth.base.index, neigh.mac))
-             }
-             _ => None,
-         }
-     });
-
-     Ok(neighs.collect())
-}
-
-
-
----
-
 
 # rust best async UX
 
