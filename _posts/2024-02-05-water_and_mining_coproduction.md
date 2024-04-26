@@ -138,3 +138,10 @@ file:///home/pete/Downloads/Thesis.pdf
 https://cacm.acm.org/magazines/2023/6/273222-the-silent-revolution-of-sat/fulltext
 https://web.dev/articles/signed-exchanges
 
+
+https://world-nuclear.org/information-library/nuclear-fuel-cycle/mining-of-uranium/uranium-mining-overview.aspx
+
+https://depts.washington.edu/embryology/index.php?id=mineral
+
+separate molten salts by phase?
+
