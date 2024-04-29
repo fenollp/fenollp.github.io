@@ -145,3 +145,7 @@ https://depts.washington.edu/embryology/index.php?id=mineral
 
 separate molten salts by phase?
 
+https://world-nuclear.org/information-library/nuclear-fuel-cycle/mining-of-uranium/uranium-mining-overview.aspx
+
+https://www.reddit.com/r/nuclear/s/0RoifG8aZk
+
