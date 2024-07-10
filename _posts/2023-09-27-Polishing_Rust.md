@@ -47,6 +47,7 @@ rustc complained just the same :)
 
 ### Using futures as values
 
+```
 api/tests/grpc/admin/book.rs-1179-async fn release_many(
 api/tests/grpc/admin/book.rs-1180-    api: &IpamApiServer,
 api/tests/grpc/admin/book.rs-1181-    token: String,
@@ -90,4 +91,78 @@ api/tests/grpc/admin/book.rs-1218-        histogram.increment(elapsed as u64).un
 api/tests/grpc/admin/book.rs-1219-        if let Err(e) = res {
 api/tests/grpc/admin/book.rs-1220-            errs.push(e.to_string())
 api/tests/grpc/admin/book.rs-1221-        };
+```
 
+
+---
+
+
+# Missing lints
+
+## Prefer `.as_deref()` over `.clone()` when using just `.map(..)` on `Option<String>`
+
+```rust
+        let route = diesel::update(&route)
+            .set((
+                req.description.clone().map(|desc| route::description.eq(desc)),
+                req.tags.clone().map(|tags| route::tags.eq(tags)),
+                req.destination.map(|dest| route::destination.eq(dest)),
+                req.nh_pn_id.map(|pn_id| route::nexthop_private_network_key.eq(pn_id)),
+                req.nh_resource_id.map(|resource_id| route::nexthop_resource_key.eq(resource_id)),
+                route::modification_date.eq(statement_timestamp()),
+            ))
+            .get_result::<Route>(conn)
+            .with_resource("route", route.key)?;
+```
+
+    req.description.as_deref().map(|desc| route::description.eq(desc)),
+    req.tags.as_deref().map(|tags| route::tags.eq(tags)),
+
+
+## Redundant `Option<_>` check on `is_none()` with `unwrap_or_default()`
+
+```rust
+assert_eq!(
+  user_input.as_ref().map(|x| !x.contains('@')).unwrap_or_default(),
+  (user_input.is_none()
+      || user_input.as_ref().map(|x| !x.contains('@')).unwrap_or_default()),
+);
+```
+
+
+---
+
+
+## Fix a design "angle mort" in `cargo`
+
+Replace current (1.79) error:
+```
+error: the lock file $HOME/wefwefwef/reMarkable-tools.git/Cargo.lock needs to be updated but --locked was passed to prevent this
+If you want to try to generate the lock file without accessing the network, remove the --locked flag and use --offline instead.
+```
+turn this error into "cargo-fetch then continue"
+
+
+---
+
+
+## downgrade owned argument to Ref
+
+
+---
+
+
+## An `async Drop` impl
+
+```rust
+impl Drop for Thing {
+     fn drop(self) {
+         let mut rt = ::tokio::runtime::Runtime::new().unwrap();
+         rt.block_on(async { timeout(self.fd.close()).await.unwrap() });
+     }
+}
+
+// Better yet!:
+// > A correctly implemented runtime will run the destructor on that future,
+// > allowing it to clean up its state.
+```
