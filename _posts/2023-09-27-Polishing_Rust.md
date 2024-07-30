@@ -166,3 +166,14 @@ impl Drop for Thing {
 // > A correctly implemented runtime will run the destructor on that future,
 // > allowing it to clean up its state.
 ```
+
+```rust
+// A proc-macro to make sure a Drop impl runs within reasonable ([statically] bounded) time
+
+impl Drop for Thing {
+    #[tokio::drop(timeout = "500ms")]
+    async fn drop(self) {
+        self.fd.close()
+    }
+}
+```
