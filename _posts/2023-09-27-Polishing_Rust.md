@@ -18,3 +18,9 @@ permalink: Polishing_Rust
 * `no_panic` introduce a new unique libpanic.so, cardinality tuned for precision on codebase origin. build.rs generates uniq crates copying libpanic.so code but with uniq final .so files
 * haxl in rust (i.e. compile-time errors when interleaving the use of >1 resources. E.g. DB conn + gRPC calls => put back conn to pool)
 * attribute macro on `diesel`'s user structs (returned by `load`, `get_result`, `get_results`, ...) that `impl Drop` and says `"oh gee, we're dropping something we mutated but didn't write back to DB hmmm?"`  (attr adds a new private int struct field that stores which fields were modified)
+
+* [SIMD Floating point and integer compressed vector library](https://github.com/velvia/compressed-vec)
+	* generalize-able SIMD-oriented `Iterator`
+	* https://github.com/velvia/compressed-vec/blob/main/src/sink.rs
+	* https://github.com/velvia/compressed-vec/blob/81f6f7aa9d2935b234ac92d47a17ecd82c569baf/src/vector.rs#L460
+	* https://github.com/velvia/compressed-vec/blob/81f6f7aa9d2935b234ac92d47a17ecd82c569baf/src/section.rs#L349

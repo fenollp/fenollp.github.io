@@ -509,3 +509,5 @@ Another, [bulkier one here](https://www.youtube.com/watch?v=dwY8cJhAhgI)
 * [Very Large Cable Driven CoreXY Mechanism](https://reprap.org/forum/read.php?397,830177)
 	* [cables](https://vimeo.com/282957836) [belts](https://vimeo.com/286113087)
 	* [CoreXY Mechanism Layout and Belt Tensioning](https://drmrehorst.blogspot.com/2018/08/corexy-mechanism-layout-and-belt.html)
+
+* fresnel lens on a roll + engineer lens so projected image is a slice of silhouette + only moving part is lens rolling and sand layer deposition
