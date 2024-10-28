@@ -107,6 +107,8 @@ The [Yumen Xinneng CSP Plant](https://www.google.com/maps/place/Yumen+Xinneng+CS
 * [(2023) A Novel Dual Receiver–Storage Design for Concentrating Solar Thermal Plants Using Beam-Down Optics](https://www.mdpi.com/1996-1073/16/10/4157)
 	* <img src="https://www.mdpi.com/energies/energies-16-04157/article_deploy/html/images/energies-16-04157-g001.png"/>
 * [(2023) Progress in beam-down solar concentrating systems](http://dx.doi.org/10.1016/j.pecs.2023.101085)
+* [(2023) A Novel Dual Receiver–Storage Design for Concentrating Solar Thermal Plants Using Beam-Down Optics](https://www.mdpi.com/1996-1073/16/10/4157)
+* [(2011) Concentrated solar power on demand](https://www.solarpaces.org/wp-content/uploads/Concentrated-solar-power-on-demand.pdf)
 
 Notable authors:
 * [Dr. Nicolas Calvet](https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering/people/dr-nicolas-calvet)

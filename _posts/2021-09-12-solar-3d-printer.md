@@ -45,6 +45,11 @@ This turned out pretty expensive: 250EUR/piece, 500EUR shipping to EU, 120EUR cu
 
 Again, bulk pricing is required here if I ever want to achieve less-than-a-thousand euros per machine...
 
+### Imaging lens
+Let's engineer a brick-printing lens: a Fresnel lens that produces a rectangular image so that the lens needn't be moved on x-y (it only needs to be normal to the Sun).
+* *Blender: simulate parametric fresnel lens to produce a specific image* (instead of point-focus or linear)
+* [github.com/rafael-fuente/diffractsim](https://github.com/rafael-fuente/diffractsim)
+
 ### ultra thin lenses
 * [https://youtu.be/CT_9EyOCivU?t=23](https://youtu.be/CT_9EyOCivU?t=23)
 * [https://www.solarbrother.com/en/buy/fresnel-lens-xl/](https://www.solarbrother.com/en/buy/fresnel-lens-xl/)

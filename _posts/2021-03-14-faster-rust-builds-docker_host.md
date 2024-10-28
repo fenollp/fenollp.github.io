@@ -115,6 +115,8 @@ Caching crates should be possible for some (most?) crates, but not these ones an
 
 `RUSTC_WRAPPER` [setting](https://doc.rust-lang.org/cargo/reference/config.html#buildrustc-wrapper) should help get there. Although looking at `sccache`'s [caveats](https://github.com/mozilla/sccache/tree/68a6aa8a978bafe5541c35d68dc36f485c56e1fc#known-caveats)...
 
+**UPDATE**: my attempt: [`cargo-green`](https://github.com/fenollp/supergreen)
+
 ## Private code & security
 
 These are the privacy and security concerns I can see from my echo-chamber-slash-comfy-chair:
