@@ -18,3 +18,5 @@ permalink: tattooable-shapes
 	* ![Who were the Nasca](https://www.britishmuseum.org/sites/default/files/styles/1_1_media_small/public/2022-06/Nasca-lines-Talia-Barreda-Promperu-2.jpg?itok=DYhJzQpn)
 * [Ukok princess tattoo](https://www.google.com/search?q=ukok+princess+tattoo&udm=2)
 	* ![Princess Of Ukok Tattoos](https://i.pinimg.com/originals/98/0b/5f/980b5f80d1f0311759fdb0bcc8b29f34.jpg)
+* [l system for plant roots](https://www.google.com/search?q=l+system+for+plant+roots&udm=2)
+	* ![Backyard Gardener - Understanding Plant Roots](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDhz4MUGO41l_uwQK8ZIxuUdXh58z4dvSMDw&s)

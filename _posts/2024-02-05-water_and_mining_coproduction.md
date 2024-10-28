@@ -58,6 +58,13 @@ https://www.youtube.com/watch?v=dIPSqszu8qg
 passive thermal desalination
 https://news.mit.edu/2023/desalination-system-could-produce-freshwater-cheaper-0927
 
+* *modern windcatcher design*
+	* ![Badguir](https://i.redd.it/8u2dqeyy4o881.jpg)
+* *windcatcher cfd simulation*
+	* [(2022) CFD Simulation Supported Development of Wind Catcher Shape Topology in a Passive Air Conduction System (PACS)](https://www.mdpi.com/2075-5309/12/10/1583)
+	* [(2009) Two-phase Euler-Lagrange CFD simulation of evaporative cooling in a Wind Tower](https://sci-hub.ru/https://doi.org/10.1016/j.enbuild.2009.05.006)
+	* https://hub.docker.com/r/opencfd/openfoam-dev/tags
+
 https://www.cell.com/joule/fulltext/S2542-4351(23)00360-4
 
 
