@@ -7,8 +7,8 @@ permalink: tattooable-shapes
 ---
 
 * [turing patterns](https://www.google.com/search?q=TURING+PATTERNS&udm=2)
-	* ![Alan Turing's Patterns in Nature, and Beyond | WIRED](https://media.wired.com/photos/5b189b0ab8e3214346853c42/master/w_1600%2Cc_limit/05fish.jpg)
-	* ![Turing Patterns. | www.dna.caltech.edu/courses/cs191](https://live.staticflickr.com/65535/48978530078_d83b6e184b_b.jpg)
+	* ![Alan Turing's Patterns in Nature, and Beyond](https://media.wired.com/photos/5b189b0ab8e3214346853c42/master/w_1600%2Cc_limit/05fish.jpg)
+	* ![Turing Patterns. www.dna.caltech.edu/courses/cs191](https://live.staticflickr.com/65535/48978530078_d83b6e184b_b.jpg)
 * [bark beetle pattern](https://www.google.com/search?q=bark+beetle+pattern&udm=2)
 	* ![bark beetle in the cold](https://i0.wp.com/sandcreektreeservice.com/wp-content/uploads/2019/03/douglas-fir-engraver-beetle.jpg?fit=768%2C512&ssl=1)
 	* ![pinned bark beetle image](https://i.pinimg.com/564x/da/a0/a4/daa0a47353e0896ae64a0a5c98f8fff9.jpg)
