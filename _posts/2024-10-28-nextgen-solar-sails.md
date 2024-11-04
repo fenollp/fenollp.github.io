@@ -34,6 +34,7 @@ they can in the cheapest Cubesat possible, aiming below 100g/m2 (all hardware in
 * tumbleweed-like structure + insolated Nylon muscles to open up parabolic surface
 	* light but solid "articulations" keep the shape in extension, once Nylon muscles extend it
 	* ![The dancefloor cover grid model](https://upload.wikimedia.org/wikipedia/commons/f/f3/Dancepol_net.jpg)
+	* [Deployable origami with on-demand collapsibility](https://www.youtube.com/watch?v=pNxY0e3Ng_M)
 * *auxetic dome*
 	* Nylon muscles pull on the many centroids such that the plane expends into a dome that then stays as such
 	* [Self-assembling material pops into 3D](https://www.youtube.com/watch?v=vrOjy-v5JgQ)
