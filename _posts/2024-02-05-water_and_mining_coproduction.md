@@ -1,6 +1,6 @@
 ---
 wip: true
-title: Water and Mining Coproduction
+title: Water Desalination and Mining Coproduction
 layout: post
 categories: [projects]
 permalink: water_and_mining_coproduction
@@ -28,71 +28,49 @@ permalink: water_and_mining_coproduction
 > the vast capacity of the ocean to dilute treated waste streams; and the stable and fixed footprint of the mining operation.
 
 
-https://hakaimagazine.com/news/anchovy-sex-is-a-force-of-nature/
-Turbulence is crucial for mixing heat and nutrients throughout the ocean. Previous research largely shows that the turbulence animals cause living their lives isn’t enough to substantially mix the layers of the ocean’s water column. But Castro’s study—which was published in 2022 and won a 2023 Ig Nobel Prize for humorous, thought-provoking scientific achievement—shows that within ocean layers, anchovy spawning causes significant, if subtle, swings in temperature. This finding suggests that in shallower water, the ruckus produced by plentiful piscine participants procreating all at once might be more powerful and more important for ocean mixing than previously thought.
-https://www.nature.com/articles/s41561-022-00916-3
+[Anchovy Sex Is a Force of Nature](https://hakaimagazine.com/news/anchovy-sex-is-a-force-of-nature/)
+> Turbulence is crucial for mixing heat and nutrients throughout the ocean. Previous research largely shows that the turbulence animals cause living their lives isn’t enough to substantially mix the layers of the ocean’s water column. But Castro’s study—which was published in 2022 and won a 2023 Ig Nobel Prize for humorous, thought-provoking scientific achievement—shows that within ocean layers, anchovy spawning causes significant, if subtle, swings in temperature. This finding suggests that in shallower water, the ruckus produced by plentiful piscine participants procreating all at once might be more powerful and more important for ocean mixing than previously thought.
+
+[(2022) Intense upper ocean mixing due to large aggregations of spawning fish](https://www.nature.com/articles/s41561-022-00916-3)
 
 
+## Mining by extracting from seawater
+[International Energy Agency: Critical Minerals Market Review 2023](https://www.iea.org/reports/critical-minerals-market-review-2023/implications)
+> [...] These illustrate how relatively niche minerals such as **magnesium**, high-purity manganese, high-purity phosphorus and silicon may disrupt supply chains due to high reliance on a small group of suppliers. [...]
 
-https://www.youtube.com/watch?v=myZvKcyhV64
-https://www.youtube.com/watch?v=hBKo_FHQRJg
-https://www.youtube.com/watch?v=9kd5feloqSU
-https://www.youtube.com/watch?v=yAM-YQSEhVI
-https://www.youtube.com/watch?v=zg4Q0xtcFlg
-https://www.youtube.com/watch?v=9xavjkBujJE
+[Primary production of magnesium worldwide from 2010 to 2023](https://www.statista.com/statistics/569515/primary-magnesium-production-worldwide/)
+> The world's primary smelter production of magnesium was estimated at 940,000 metric tons in 2023.
 
-mining by extracting from seawater
-https://www.nature.com/articles/s41545-022-00153-6
-https://support.apple.com/en-kw/guide/iphone/iphdf551cfa2/ios
-https://www.statista.com/statistics/208715/total-revenue-of-the-top-mining-companies/
+[Revenue of the leading mining companies worldwide from 2005 to 2023, with a forecast for 2024](https://www.statista.com/statistics/208715/total-revenue-of-the-top-mining-companies/)
+> In 2023, the mining industry's leading 40 companies had a total revenue of approximately 845 billion U.S. dollars, including trading revenues.
 
+* [(2017) Mining valuable minerals from seawater: a critical review](https://sci-hub.se/https://doi.org/10.1039/C6EW00268D)
+* [(2022) Seawater desalination concentrate—a new frontier for sustainable mining of valuable minerals](https://www.nature.com/articles/s41545-022-00153-6)
+![Element concentration and price (2021)](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41545-022-00153-6/MediaObjects/41545_2022_153_Fig1_HTML.png)
 
-https://www.youtube.com/results?search_query=passive+desalinatino
-https://www.wikiwand.com/en/Seawater
-https://salinity.oceansciences.org/smap-salinity.htm
-https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Mapping_salty_waters
-file:///home/pete/Downloads/Global_sea-surface_salinity.png
+## Links
+* [Seawater](https://www.wikiwand.com/en/articles/Seawater)
+* [NASA's Soil Moisture Active Passive (SMAP) maps](https://salinity.oceansciences.org/smap-salinity.htm)
+* [ESA: Mapping salty waters](https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Mapping_salty_waters)
+![Global_sea-surface_salinity](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/05/global_sea-surface_salinity/19390092-1-eng-GB/Global_sea-surface_salinity_pillars.png)
 surface sea salinity ~= 3.2-3.8% = 30-40kg per m3
-https://www.youtube.com/watch?v=aNNt9O70ASc
-https://www.youtube.com/watch?v=dIPSqszu8qg
-passive thermal desalination
-https://news.mit.edu/2023/desalination-system-could-produce-freshwater-cheaper-0927
+* [Going Nuclear to Desalinate Seawater](https://www.youtube.com/watch?v=aNNt9O70ASc)
+* [YouTube - passive desalination](https://www.youtube.com/results?search_query=passive+desalination)
+* [Salt Water Solar Desalination - ZERO Energy](https://www.youtube.com/watch?v=dIPSqszu8qg)
+* [Desalination system could produce freshwater that is cheaper than tap water](https://news.mit.edu/2023/desalination-system-could-produce-freshwater-cheaper-0927)
 
+## Passive thermal desalination
 * *modern windcatcher design*
 	* ![Badguir](https://i.redd.it/8u2dqeyy4o881.jpg)
 * *windcatcher cfd simulation*
 	* [(2022) CFD Simulation Supported Development of Wind Catcher Shape Topology in a Passive Air Conduction System (PACS)](https://www.mdpi.com/2075-5309/12/10/1583)
 	* [(2009) Two-phase Euler-Lagrange CFD simulation of evaporative cooling in a Wind Tower](https://sci-hub.ru/https://doi.org/10.1016/j.enbuild.2009.05.006)
-	* https://hub.docker.com/r/opencfd/openfoam-dev/tags
+	* [https://hub.docker.com/r/opencfd/openfoam-dev/tags](https://hub.docker.com/r/opencfd/openfoam-dev/tags)
 
-https://www.cell.com/joule/fulltext/S2542-4351(23)00360-4
-
-
-https://www.youtube.com/watch?v=2Eza9UB25VU
-
-https://www.youtube.com/watch?v=sYVClpAwl-I
+* [(2023) Extreme salt-resisting multistage solar distillation with thermohaline convection](https://www.cell.com/joule/fulltext/S2542-4351(23)00360-4)
 
 
-
-
-https://sci-hub.se/https://doi.org/10.1039/C6EW00268D
-https://www.nature.com/articles/s41545-022-00153-6
->>>continue reading at
-> A commercial-scale project is being undertaken by the Saline Water Conversion Corporation (SWCC) to construct a NF plant in Shoaiba, Saud
-https://www.nature.com/articles/s41545-022-00153-6/tables/3
-https://www.nature.com/articles/s41545-022-00153-6/tables/2
-https://www.nature.com/articles/s41545-022-00153-6/figures/1
-Standard Sea Water (SSW) composition
-
-
-
-file:///home/pete/Downloads/ASME-IDETC2017-68360.pdf
-https://cordis.europa.eu/project/id/101083827
-file:///home/pete/Downloads/Solar_energy_at_high_temperatures_researches_at_th.pdf
-https://helioscsp.com/concentrated-solar-power-is-an-old-technology-making-a-comeback-heres-how-it-works/
-https://obsidian.md/
-https://diposit.ub.edu/dspace/bitstream/2445/127719/1/675339.pdf
-
+---
 
 https://wiki.hackerspaces.org/Design_Patterns
 https://github.com/mgmeyers/obsidian-kanban

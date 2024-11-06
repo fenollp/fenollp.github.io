@@ -14,6 +14,9 @@ permalink: large-scale-solar-thermal-innovations
 </p>
 
 
+[Concentrated solar power is an old technology making a comeback. Here’s how it works](https://helioscsp.com/concentrated-solar-power-is-an-old-technology-making-a-comeback-heres-how-it-works/)
+
+
 ## optimization on heliostats
 
 * `metalized BoPET instead of glass mirror`
@@ -107,8 +110,10 @@ The [Yumen Xinneng CSP Plant](https://www.google.com/maps/place/Yumen+Xinneng+CS
 * [(2023) A Novel Dual Receiver–Storage Design for Concentrating Solar Thermal Plants Using Beam-Down Optics](https://www.mdpi.com/1996-1073/16/10/4157)
 	* <img src="https://www.mdpi.com/energies/energies-16-04157/article_deploy/html/images/energies-16-04157-g001.png"/>
 * [(2023) Progress in beam-down solar concentrating systems](http://dx.doi.org/10.1016/j.pecs.2023.101085)
-* [(2023) A Novel Dual Receiver–Storage Design for Concentrating Solar Thermal Plants Using Beam-Down Optics](https://www.mdpi.com/1996-1073/16/10/4157)
 * [(2011) Concentrated solar power on demand](https://www.solarpaces.org/wp-content/uploads/Concentrated-solar-power-on-demand.pdf)
+* [(2022) SUNSON: Concentrated Solar energy storage at Ultra-high temperatures aNd Solid-state cONversion](https://doi.org/10.3030/101083827)
+* [(2016) Solar energy at high temperatures; researches at the Weizmann Institute of Science, Israel; 25 years of success](http://dx.doi.org/10.1051/rees/2016001)
+* [(2018) High temperature systems using solid particles as TES and HTF material: A review](https://doi.org/10.1016/j.apenergy.2017.12.107)
 
 Notable authors:
 * [Dr. Nicolas Calvet](https://www.ku.ac.ae/academics/college-of-engineering/department/department-of-mechanical-engineering/people/dr-nicolas-calvet)
