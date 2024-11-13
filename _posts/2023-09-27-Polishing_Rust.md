@@ -181,4 +181,73 @@ impl Drop for Thing {
     }
 }
 ```
->>>>>>> 4cd6100 (more thoughts on rust)
+
+
+---
+
+
+## Cryptographic signatures for unsafe code
+On `SAFETY` annotations & their evolution through time with regards to the actual annotated code.
+
+```
+0 1s launch-code.git master ❯ gwd
+    origin  git@github.com:kmcallister/launch-code.git
+0 0s launch-code.git master ❯ cat README.md 
+```
+
+Functions containing unsafe code demand extra scrutiny, because they can break
+Rust's memory safety guarantees.  Some projects may desire a formal process for
+auditing unsafe code whenever it is added or modified.  This compiler plugin
+supports a workflow where audit status is tracked in the source code, and the
+history of audits is part of each file's version control history.
+
+It works by attaching a cryptographic signature to every `unsafe fn`, as well
+as every `fn` that contains an `unsafe` block.
+
+```rust
+#![feature(plugin)]
+
+#[no_link]
+#[plugin(public_key="examples/pubkey")]
+extern crate launch_code;
+
+#[launch_code="⠐⡛⢾⣯⢓⢵⢖⡆⣈⠇⠸⣼⢁⢦⢰⢷⡫⢙⠻⠺⢗⢻⣷⠋⣸⡐⣂⡜⠇⡍⢁⢗⢜⠢⡢⣵⠩⠲⡈⢈⢂⡑⣷⣩⢲⢖⢃⡓⠄⣴⠩⡹⡸⠥⢱⢭⡼⠡⣻⡥⢜⢔⡌⠅"]
+fn totally_fine() -> u64 {
+    unsafe {
+        *std::ptr::null()
+    }
+}
+```
+```rust
+use std::char;
+
+fn to_braille(xs: &[u8]) -> String {
+    xs.iter()
+#         .map(|&x| char::from_u32(x as u32 + 0x2800).unwrap())
+        .try_map(|&x| char::from_u32(x as u32 + 0x2800).unwrap())
+        .collect()
+}
+
+fn from_braille(xs: &str) -> Option<Vec<u8>> {
+    xs
+        .chars()
+#         .map(|c| match c as u32 {
+#             n @ 0x2800..=0x28FF => (n - 0x2800) as u8,
+#             _ => {
+#                 bogus = true;
+#                 0
+#             }
+#         })
+#         .collect();
+#     if bogus {
+#         None
+#     } else {
+#         Some(vec)
+#     }
+        .optionally_map(|c| match c as u32 {
+            n @ 0x2800..=0x28FF => Some((n - 0x2800) as u8),
+            _ => None
+        }) # -> Option<Iter<Item=u32>>, breaks at first None.
+        .map(|it| -> Vec<u32> { it.collect() })
+}
+```
