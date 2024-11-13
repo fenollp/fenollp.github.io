@@ -22,5 +22,5 @@ new.%:
 	$(EDITOR) $$(ls _posts/* -t | head -n1)
 
 clean:
-	$(if $(wildcard _site), rm -rf _site)
-	$(if $(wildcard .jekyll-cache), rm -rf .jekyll-cache)
+	$(if $(wildcard _site), rm -rf _site || sudo rm -rf _site)
+	$(if $(wildcard .jekyll-cache), rm -rf .jekyll-cache || sudo rm -rf .jekyll-cache)
