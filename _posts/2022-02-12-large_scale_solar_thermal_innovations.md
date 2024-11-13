@@ -148,7 +148,7 @@ Part of [EU's H2020 Research program](https://mosaic-h2020.eu/scientific-publica
 	* [https://cordis.europa.eu/project/id/727402](https://cordis.europa.eu/project/id/727402)
 	* [https://sfera3.sollab.eu/2021/11/05/launch-of-the-4th-sfera-iii-transnational-access-campaign/](https://sfera3.sollab.eu/2021/11/05/launch-of-the-4th-sfera-iii-transnational-access-campaign/)
 	* [https://sfera3.sollab.eu/about-us/#partners](https://sfera3.sollab.eu/about-us/#partners)
-
+	* [Keith Lovegrove, Managing Director - ITP Thermal Pty Ltd](https://www.linkedin.com/in/keith-lovegrove-b27378102/)
 
 ### synthese
 * `reduce cost`
