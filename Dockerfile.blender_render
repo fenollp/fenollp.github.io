@@ -1,0 +1,177 @@
+# syntax=docker.io/docker/dockerfile:1@sha256:db1ff77fb637a5955317c7a3a62540196396d565f3dd5742e76dddbb6d75c4c5
+# https://aistudio.google.com/u/1/prompts/1cBiixBWIS9DVFcrrXFdSQCp31YJ5pKyi
+# docker build -f Dockerfile.blender_render -t final-png -o . . && open rendered_scene.png
+
+FROM --platform=$BUILDPLATFORM docker.io/linuxserver/blender:version-4.3.1@sha256:8b6e2c9006ed61b6a5e69f61f7d8baf1d34519e96abe8516236c1809278abbc6 AS blender4
+
+FROM blender4 AS blender-render
+WORKDIR /app
+COPY ./wahaj_concentrator.stl /app/cube.stl
+RUN cat <<'END_OF_PYTHON' >render_scene.py
+import bpy
+import math
+import os
+import mathutils
+
+def setup_scene(
+    stl_filepath,
+    output_path,
+    hour=10.16,  # 10:10
+    latitude_degrees=40.0,  # Example Latitude
+    longitude_degrees=0.0, # Example Longitude
+    sun_elevation=0,
+    sun_rotation=0,
+    renderer='CYCLES',  # Either 'CYCLES' or 'LUXCORE'
+    samples=64,
+    resolution_x=1920,
+    resolution_y=1080
+):
+    """Sets up the Blender scene, renders, and saves it.
+
+    Args:
+        stl_filepath (str): Path to the STL file.
+        output_path (str): Path to save the rendered PNG.
+        hour (float, optional): Hour of day (e.g., 10.5 for 10:30 AM). Defaults to 10.16.
+        latitude_degrees (float, optional): Latitude in degrees. Defaults to 40.0.
+        longitude_degrees (float, optional): Longitude in degrees. Defaults to 0.0.
+        sun_elevation (float, optional): Additional elevation in degrees. Defaults to 0.
+        sun_rotation (float, optional): Additional rotation in degrees. Defaults to 0.
+        renderer (str, optional): Render Engine. Defaults to 'CYCLES'. Options 'CYCLES', 'LUXCORE'.
+        samples (int, optional): Number of samples. Defaults to 64.
+        resolution_x (int, optional): Horizontal render resolution. Defaults to 1920.
+        resolution_y (int, optional): Vertical render resolution. Defaults to 1080.
+    """
+
+    # Clear existing scene
+    bpy.ops.wm.read_factory_settings(use_empty=True)
+
+    # Import the STL file
+    try:
+        bpy.ops.wm.stl_import(filepath=stl_filepath)
+        imported_object = bpy.context.selected_objects[0]
+    except IndexError:
+        print("Error: STL file not loaded. Ensure the path is correct.")
+        return
+
+    # Create Mirror Material
+    mirror_material = bpy.data.materials.new(name="MirrorMaterial")
+    mirror_material.use_nodes = True
+    bsdf = mirror_material.node_tree.nodes.get("Principled BSDF")
+    bsdf.inputs["Metallic"].default_value = 1.0
+    bsdf.inputs["Roughness"].default_value = 0.0
+
+    # Apply Material to the object
+    if imported_object.data.materials:
+        imported_object.data.materials[0] = mirror_material
+    else:
+        imported_object.data.materials.append(mirror_material)
+
+    # Calculate the Sun's position
+    hour_angle = (hour - 12) * 15
+    latitude = math.radians(latitude_degrees)
+    sun_elevation_radians = math.radians(sun_elevation)
+    longitude_radians = math.radians(longitude_degrees)
+    sun_rotation_radians = math.radians(sun_rotation)
+
+    # Calculate the sun's location using spherical coordinates to Cartesian 
+    x = math.cos(latitude) * math.cos(math.radians(hour_angle) + longitude_radians)
+    y = math.cos(latitude) * math.sin(math.radians(hour_angle) + longitude_radians)
+    z = math.sin(latitude)
+
+    # Apply custom rotations to the sun vector
+    sun_vector = mathutils.Vector((x, y, z))
+    sun_vector.rotate(mathutils.Euler((sun_elevation_radians, 0, 0)))
+    sun_vector.rotate(mathutils.Euler((0, 0, sun_rotation_radians)))
+
+    # Set Sun Lamp
+    sun_data = bpy.data.lights.new(name="Sun", type="SUN")
+    sun_object = bpy.data.objects.new(name="Sun", object_data=sun_data)
+    bpy.context.collection.objects.link(sun_object)
+    sun_object.location = (0, 0, 0)
+    sun_object.rotation_euler = sun_vector.to_track_quat('-Z', 'Y').to_euler()
+    sun_object.data.energy = 5  # Set the sun's energy
+
+    # Center and zoom camera
+    # Get object bounds
+    bbox_corners = [imported_object.matrix_world @ mathutils.Vector(corner) for corner in imported_object.bound_box]
+    min_x = min(corner.x for corner in bbox_corners)
+    min_y = min(corner.y for corner in bbox_corners)
+    min_z = min(corner.z for corner in bbox_corners)
+    max_x = max(corner.x for corner in bbox_corners)
+    max_y = max(corner.y for corner in bbox_corners)
+    max_z = max(corner.z for corner in bbox_corners)
+
+    # Calculate bounding box center
+    center_x = (min_x + max_x) / 2
+    center_y = (min_y + max_y) / 2
+    center_z = (min_z + max_z) / 2
+
+    # Calculate bounding box size
+    size_x = max_x - min_x
+    size_y = max_y - min_y
+    size_z = max_z - min_z
+
+    # Calculate appropriate camera distance to center the imported object
+    max_size = max(size_x, size_y, size_z)
+    camera_distance = max_size * 1.5 # Add a little space for the object to be fully visible
+
+    # Configure camera
+    cam_data = bpy.data.cameras.new("camera")
+    cam_object = bpy.data.objects.new("camera", cam_data)
+    bpy.context.collection.objects.link(cam_object)
+
+    # Position camera
+    cam_object.location = mathutils.Vector((center_x, center_y - camera_distance, center_z))
+
+    # Look at the center
+    direction = mathutils.Vector((center_x, center_y, center_z)) - cam_object.location
+    cam_object.rotation_euler = direction.to_track_quat('-Z', 'Y').to_euler()
+    bpy.context.scene.camera = cam_object
+
+    # Configure render engine
+    bpy.context.scene.render.engine = renderer
+    if renderer == 'CYCLES':
+        bpy.context.scene.cycles.samples = samples
+    elif renderer == 'LUXCORE':
+        bpy.context.scene.luxcore.sampler_samples = samples
+    else:
+        print("Invalid renderer selected")
+        return
+
+    # Configure render output
+    bpy.context.scene.render.resolution_x = resolution_x
+    bpy.context.scene.render.resolution_y = resolution_y
+    bpy.context.scene.render.image_settings.file_format = 'PNG'
+    bpy.context.scene.render.filepath = output_path
+
+    # Render scene
+    bpy.ops.render.render(write_still=True)
+    print(f"Rendered and saved to: {output_path}")
+
+
+if __name__ == "__main__":
+    # Example Usage:
+
+    stl_file = "/app/cube.stl" # Replace with your STL file
+    output_file = "/app/rendered_scene.png" # Change your output folder
+
+    setup_scene(
+        stl_filepath = stl_file,
+        output_path = output_file,
+        hour=10.16,
+        latitude_degrees=40.0,
+        longitude_degrees=0.0,
+        sun_elevation=20.0,
+        sun_rotation = 45,
+        renderer = 'CYCLES',  # or 'LUXCORE'
+        samples=64,
+        resolution_x = 1920,
+        resolution_y = 1080
+    )
+END_OF_PYTHON
+RUN set -eux \
+ && blender --background --python-exit-code 42 --python /app/render_scene.py \
+ && ls -lha /app/rendered_scene.png
+
+FROM scratch AS final-png
+COPY --from=blender-render /app/rendered_scene.png /

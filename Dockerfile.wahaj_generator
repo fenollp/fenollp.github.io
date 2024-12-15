@@ -1,7 +1,10 @@
 # syntax=docker.io/docker/dockerfile:1@sha256:db1ff77fb637a5955317c7a3a62540196396d565f3dd5742e76dddbb6d75c4c5
 # https://aistudio.google.com/u/1/prompts/1LEqnUidAgP14Ygl2nMXMyuTYYzKq_JVu
+# docker build -f Dockerfile.wahaj_generator -t final -o . . && open wahaj_generator.stl
 
-FROM python:3 AS builder
+FROM --platform=$BUILDPLATFORM docker.io/library/python:3@sha256:9255d1993f6d28b8a1cd611b108adbdfa38cb7ccc46ddde8ea7d734b6c845e32 AS python3
+
+FROM python3 AS wahaj-generator
 WORKDIR /app
 RUN pip install numpy
 RUN cat <<'END_OF_PYTHON' >wahaj_generator.py
@@ -115,4 +118,4 @@ END_OF_PYTHON
 RUN python wahaj_generator.py
 
 FROM scratch AS final
-COPY --from=builder /app/wahaj_concentrator.stl /
+COPY --from=wahaj-generator /app/wahaj_concentrator.stl /
