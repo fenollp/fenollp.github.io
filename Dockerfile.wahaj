@@ -1,0 +1,94 @@
+# syntax=docker.io/docker/dockerfile:1@sha256:db1ff77fb637a5955317c7a3a62540196396d565f3dd5742e76dddbb6d75c4c5
+# docker build -f Dockerfile.wahaj -t final -o . . && open wahaj_concentrator.stl 
+
+FROM python:3 AS builder
+
+# Install dependencies
+RUN pip install numpy numpy-stl
+
+WORKDIR /app
+
+# Create Python script via heredoc
+RUN cat <<'EOF' > script.py
+#!/usr/bin/env python3
+"""
+Generate an STL file of the rings of a Wahaj concentrator described in the referenced patent and documents.
+Refactoring to introduce functions for computing beta and L.
+"""
+
+import math
+import numpy as np
+from stl import mesh
+
+def compute_beta(F, R):
+    # β = arctan(F/R)/2 + π/2
+    return math.atan(F/R)/2 + math.pi/2
+
+def compute_L(d, beta):
+    # L = d * sin(2β−π/2)/cos(β)
+    angle_for_L = 2*beta - math.pi/2
+    return d * math.sin(angle_for_L) / math.cos(beta)
+
+# Given parameters for first ring (example values):
+F1 = 5.0   # vertical distance from focal area
+R1 = 2.0   # horizontal distance from focal area
+d1 = 0.5   # diameter of concentrated beam
+
+β1 = compute_beta(F1, R1)
+L1 = compute_L(d1, β1)
+
+ring_count = 5
+deltaF = 1.0
+deltaR = 2.0
+revolve_steps = 64
+
+def ring_geometry(F_i, R_i, d_i):
+    beta_i = compute_beta(F_i, R_i)
+    L_i = compute_L(d_i, beta_i)
+    dx = math.sin(beta_i)
+    dz = math.cos(beta_i)
+    E1 = np.array([R_i + (L_i/2)*dx, 0, F_i + (L_i/2)*dz])
+    E2 = np.array([R_i - (L_i/2)*dx, 0, F_i - (L_i/2)*dz])
+    angles = np.linspace(0, 2*math.pi, revolve_steps, endpoint=False)
+    top_curve = np.array([[E1[0]*math.cos(a), E1[0]*math.sin(a), E1[2]] for a in angles])
+    bottom_curve = np.array([[E2[0]*math.cos(a), E2[0]*math.sin(a), E2[2]] for a in angles])
+    return top_curve, bottom_curve
+
+vertices_list = []
+faces_list = []
+vertex_count = 0
+
+for i in range(ring_count):
+    F_i = F1 + i*deltaF
+    R_i = R1 + i*deltaR
+    d_i = d1
+    top_curve, bottom_curve = ring_geometry(F_i, R_i, d_i)
+    n = len(top_curve)
+    ring_verts = np.vstack((top_curve, bottom_curve))
+    start_index = vertex_count
+    vertices_list.append(ring_verts)
+    for k in range(n):
+        k_next = (k+1)%n
+        top0 = start_index + k
+        top1 = start_index + k_next
+        bot0 = start_index + n + k
+        bot1 = start_index + n + k_next
+        faces_list.append([top0, bot0, top1])
+        faces_list.append([bot0, bot1, top1])
+    vertex_count += ring_verts.shape[0]
+
+all_vertices = np.vstack(vertices_list)
+all_faces = np.array(faces_list)
+
+concentrator_mesh = mesh.Mesh(np.zeros(all_faces.shape[0], dtype=mesh.Mesh.dtype))
+for i, f in enumerate(all_faces):
+    for j in range(3):
+        concentrator_mesh.vectors[i][j] = all_vertices[f[j], :]
+
+concentrator_mesh.save("wahaj_concentrator.stl")
+EOF
+
+RUN python3 script.py
+
+FROM scratch AS final
+COPY --from=builder /app/wahaj_concentrator.stl /wahaj_concentrator.stl
