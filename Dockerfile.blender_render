@@ -46,7 +46,7 @@ def render_scene_to_png():
     imported_object.location = [-center_coords[0], -center_coords[1], -center_coords[2]]
     print(f"imported_object.location: {imported_object.location}")
 
-    if true:
+    if True:
         # Scale the STL to be a bit larger than the cube
         max_cube_dimension = 2 #size of cube is 2
         max_stl_dimension = max(size_vector)

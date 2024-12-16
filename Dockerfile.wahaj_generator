@@ -30,28 +30,28 @@ def create_ring_mesh(inner_radius, outer_radius, height, segments=32):
       
       x1_inner = inner_radius * math.cos(theta1)
       y1_inner = inner_radius * math.sin(theta1)
-      z1_inner = 0
-      
+      z1_inner = height
+
       x2_inner = inner_radius * math.cos(theta2)
       y2_inner = inner_radius * math.sin(theta2)
-      z2_inner = 0
-      
+      z2_inner = height
+
       x1_outer = outer_radius * math.cos(theta1)
       y1_outer = outer_radius * math.sin(theta1)
-      z1_outer = height
-      
+      z1_outer = 0
+
       x2_outer = outer_radius * math.cos(theta2)
       y2_outer = outer_radius * math.sin(theta2)
-      z2_outer = height
-      
+      z2_outer = 0
+
       vertex_indices = len(vertices)
       vertices.extend([(x1_inner, y1_inner, z1_inner),
                        (x2_inner, y2_inner, z2_inner),
                        (x2_outer, y2_outer, z2_outer),
                        (x1_outer, y1_outer, z1_outer)])
       
-      faces.append([vertex_indices + 0, vertex_indices + 2, vertex_indices + 1])  # First Triangle
-      faces.append([vertex_indices + 0, vertex_indices + 3, vertex_indices + 2])  # Second Triangle
+      faces.append([vertex_indices + 0, vertex_indices + 1, vertex_indices + 2])
+      faces.append([vertex_indices + 0, vertex_indices + 2, vertex_indices + 3])
 
   return np.array(vertices,dtype=np.float32), np.array(faces,dtype=np.int32)
 
