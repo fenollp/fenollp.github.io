@@ -85,19 +85,19 @@ def write_stl_file(filename, vertices_list, faces_list):
     """Writes the mesh data to an STL file."""
 
     with open(filename, 'w') as f:
-        f.write("solid wahaj_concentrator\\n")
+        f.write("solid wahaj_concentrator\n")
         for vertices, faces in zip(vertices_list, faces_list):
           for face in faces:
               normal = np.cross(vertices[face[1]] - vertices[face[0]], vertices[face[2]] - vertices[face[0]])
               normal /= np.linalg.norm(normal)
-              f.write("  facet normal {:.6f} {:.6f} {:.6f}\\n".format(normal[0], normal[1], normal[2]))
-              f.write("    outer loop\\n")
+              f.write("  facet normal {:.6f} {:.6f} {:.6f}\n".format(normal[0], normal[1], normal[2]))
+              f.write("    outer loop\n")
               for vertex_index in face:
                   vertex = vertices[vertex_index]
-                  f.write("      vertex {:.6f} {:.6f} {:.6f}\\n".format(vertex[0], vertex[1], vertex[2]))
-              f.write("    endloop\\n")
-              f.write("  endfacet\\n")
-        f.write("endsolid wahaj_concentrator\\n")
+                  f.write("      vertex {:.6f} {:.6f} {:.6f}\n".format(vertex[0], vertex[1], vertex[2]))
+              f.write("    endloop\n")
+              f.write("  endfacet\n")
+        f.write("endsolid wahaj_concentrator\n")
 
 
 if __name__ == "__main__":
