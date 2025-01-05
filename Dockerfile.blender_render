@@ -46,6 +46,27 @@ def render_scene_to_png():
     imported_object.location = [-center_coords[0], -center_coords[1], -center_coords[2]]
     print(f"imported_object.location: {imported_object.location}")
 
+    # Mirror material for STL
+    mirror_mat = bpy.data.materials.new(name="MirrorMaterial")
+    mirror_mat.use_nodes = True
+    principled_bsdf = mirror_mat.node_tree.nodes.get("Principled BSDF")
+    principled_bsdf.inputs["Base Color"].default_value = (0.8, 0.8, 0.8, 1)
+    principled_bsdf.inputs["Metallic"].default_value = 1
+    principled_bsdf.inputs["Roughness"].default_value = 0.02
+    imported_object.data.materials.append(mirror_mat)
+
+    # Add ground plane
+    bpy.ops.mesh.primitive_plane_add(size=10, enter_editmode=False, align='WORLD', location=(0, 0, -max(max_coords)*1.2))
+    ground_plane = bpy.context.object
+
+    # Sand Dune material for ground
+    sand_mat = bpy.data.materials.new(name="SandDuneMaterial")
+    sand_mat.use_nodes = True
+    principled_bsdf = sand_mat.node_tree.nodes.get("Principled BSDF")
+    principled_bsdf.inputs["Base Color"].default_value = (0.85, 0.78, 0.64, 1)
+    principled_bsdf.inputs["Roughness"].default_value = 0.7
+    ground_plane.data.materials.append(sand_mat)
+
     if True:
         # Scale the STL to be a bit larger than the cube
         max_cube_dimension = 2 #size of cube is 2
