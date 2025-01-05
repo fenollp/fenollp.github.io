@@ -233,3 +233,28 @@ RUN blender --background --python-exit-code 42 --python /app/render_scene.py
 
 FROM scratch AS final-png
 COPY --from=blender-render /app/rendered_scene.png /
+
+
+
+
+## Next steps
+
+# sudo apt update
+# sudo apt install git cmake make gcc g++ libboost-all-dev libopenimageio-dev libglew-dev libxxf86vm-dev libglfw3-dev libopenexr-dev libpng-dev libjpeg-dev
+
+
+# cd ~
+# git clone https://github.com/LuxCoreRender/luxcorerender.git
+# cd luxcorerender
+
+
+# mkdir build
+# cd build
+# cmake .. -DBUILD_LUXCORE_SDK=ON -DBUILD_LUXCORE_OPENCL=ON /*-DBUILD_LUXCORE_CUDA=ON*/ -DBUILD_LUXCORE_STANDALONE=ON
+
+
+# make -j$(nproc)
+
+
+# sudo make install
+
