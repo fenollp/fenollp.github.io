@@ -1,0 +1,5 @@
+https://github.com/fullscreennl/blackstripes-python-extensions
+https://github.com/SonarSonic/DrawingBotV3
+https://github.com/LingDong-/linedraw
+https://github.com/piebro/plotting-maps
+https://github.com/berkowski/tokio-serial/blob/master/examples/serial_println.rs
