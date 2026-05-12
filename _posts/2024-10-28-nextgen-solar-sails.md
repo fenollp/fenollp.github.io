@@ -68,6 +68,8 @@ they can in the cheapest Cubesat possible, aiming for a total mass below 10g/m²
 * **Laser sails**
   * [Philip Lubin: Breakthrough Discuss 2017](https://www.youtube.com/watch?v=7UVgMCVFCe0)
   * [Photonic Propulsion for Relativistic Flight Enabling the First Interstellar Missions Philip Lubin](https://www.youtube.com/watch?v=hWZCCjV29ig)
+  * 3000Isp 1t/month with 0.1GW [MarsU Seminar: Rapid Transit to Mars mission with laser-thermal propulsion](https://www.youtube.com/watch?v=nXkuA4cnbkE)
+    * [2022, Design of a rapid transit to Mars mission using laser-thermal propulsion](https://arxiv.org/pdf/2201.00244)
 * [**Alpha CubeSat** University project](https://alphacubesat.cornell.edu/lightsail.html)
 * **Using inflatable booms**
   * [Ultra-Thin Solar Sails for Interstellar Travel](https://www.niac.usra.edu/files/studies/final_report/333Christensen.pdf)
@@ -109,22 +111,12 @@ The [Ripstop](https://en.wikipedia.org/wiki/Ripstop) pattern.
 ### [Auxetic](https://en.wikipedia.org/wiki/Auxetics) dome
 Nylon muscles pull on the many centroids such that the plane expends into a dome that then stays as such
 
-[(2021) Bistable Auxetic Surface Structures](https://sci-hub.ru/https://doi.org/10.1145/3450626.3459940)
+* [(2021) Bistable Auxetic Surface Structures](https://sci-hub.ru/https://doi.org/10.1145/3450626.3459940)
+* [Auxetics & Metamaterials (+Grasshopper Tutorial)](https://www.youtube.com/watch?v=2tKj7wQtXxY)
+* Check out [github.com/UH-AIM/bistable-auxetic-surface-structures](https://github.com/UH-AIM/bistable-auxetic-surface-structures) by [The Architected Intelligent Matter (AIM) lab](https://aim.me.uh.edu).
+* [Bistable Auxetic Surface Structures (Full Talk for SIGGRAPH 2021)](https://www.youtube.com/watch?v=-9mXmNcvbBg)
+* [Bistable Auxetic Surface Structures (Supplementary Video)](https://www.youtube.com/watch?v=UL-OQYvQPO8)
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vrOjy-v5JgQ?si=uk-dXg-4SKGmNmjF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2tKj7wQtXxY?si=YWlIK4o0VsvaMhXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
-
-Check out [github.com/UH-AIM/bistable-auxetic-surface-structures](https://github.com/UH-AIM/bistable-auxetic-surface-structures) by [The Architected Intelligent Matter (AIM) lab](https://aim.me.uh.edu).
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-9mXmNcvbBg?si=fZMvAwF5KsXcYXJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UL-OQYvQPO8?si=OX5Ft6j30zZdFlMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>
