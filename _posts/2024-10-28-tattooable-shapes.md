@@ -6,6 +6,8 @@ categories: [projects]
 permalink: tattooable-shapes
 ---
 
+* [phyllotaxis](https://www.google.com/search?q=phyllotaxis&udm=2)
+  * ![Phyllotaxis Sphere](https://evsc.net/uploads/2010/10/phyllo.png)
 * [turing patterns](https://www.google.com/search?q=TURING+PATTERNS&udm=2)
 	* ![Alan Turing's Patterns in Nature, and Beyond](https://media.wired.com/photos/5b189b0ab8e3214346853c42/master/w_1600%2Cc_limit/05fish.jpg)
 	* ![Turing Patterns. www.dna.caltech.edu/courses/cs191](https://live.staticflickr.com/65535/48978530078_d83b6e184b_b.jpg)
