@@ -1,0 +1,111 @@
+# syntax=docker.io/docker/dockerfile:1@sha256:db1ff77fb637a5955317c7a3a62540196396d565f3dd5742e76dddbb6d75c4c5
+# https://aistudio.google.com/u/1/prompts/1cBiixBWIS9DVFcrrXFdSQCp31YJ5pKyi
+# docker build -f Dockerfile.blender_render -t final-png -o . . && open rendered_scene.png
+
+FROM --platform=$BUILDPLATFORM docker.io/linuxserver/blender:version-4.3.1@sha256:8b6e2c9006ed61b6a5e69f61f7d8baf1d34519e96abe8516236c1809278abbc6 AS blender4
+
+FROM blender4 AS blender-render
+WORKDIR /app
+COPY ./wahaj_concentrator.stl /app/shape.stl
+RUN cat <<'END_OF_PYTHON' >render_scene.py
+import bpy
+import math
+import numpy as np
+
+def render_scene_to_png():
+    bpy.ops.object.select_all(action='SELECT')
+    bpy.ops.object.delete()
+
+    # Import STL
+    bpy.ops.wm.stl_import(filepath='/app/shape.stl')
+    imported_object = bpy.context.selected_objects[0]
+
+    # Calculate STL dimensions and center
+    bbox = imported_object.bound_box
+    print(f"bbox: {bbox}")
+    for corner in bbox:
+        print(f"list(corner): {list(corner)}")
+    min_coords = [math.inf, math.inf, math.inf]
+    max_coords = [-math.inf, -math.inf, -math.inf]
+
+    matrix_world_np = np.array(imported_object.matrix_world)
+    for corner in bbox:
+        world_corner_4d = matrix_world_np @ np.array(list(corner) + [1]).reshape(4,1)
+        world_corner = world_corner_4d.flatten()[:3]
+
+        for i in range(3):
+            min_coords[i] = min(min_coords[i], world_corner[i])
+            max_coords[i] = max(max_coords[i], world_corner[i])
+
+    size_vector = [max_coords[i] - min_coords[i] for i in range(3)]
+    print(f"size_vector: {size_vector}")
+    center_coords = [(max_coords[i] + min_coords[i]) / 2 for i in range(3)]
+    print(f"center_coords: {center_coords}")
+
+    # Center the STL
+    imported_object.location = [-center_coords[0], -center_coords[1], -center_coords[2]]
+    print(f"imported_object.location: {imported_object.location}")
+
+    # Mirror material for STL
+    mirror_mat = bpy.data.materials.new(name="MirrorMaterial")
+    mirror_mat.use_nodes = True
+    principled_bsdf = mirror_mat.node_tree.nodes.get("Principled BSDF")
+    principled_bsdf.inputs["Base Color"].default_value = (0.8, 0.8, 0.8, 1)
+    principled_bsdf.inputs["Metallic"].default_value = 1
+    principled_bsdf.inputs["Roughness"].default_value = 0.02
+    imported_object.data.materials.append(mirror_mat)
+
+    # Add ground plane
+    bpy.ops.mesh.primitive_plane_add(size=10, enter_editmode=False, align='WORLD', location=(0, 0, -max(max_coords)*1.2))
+    ground_plane = bpy.context.object
+
+    # Sand Dune material for ground
+    sand_mat = bpy.data.materials.new(name="SandDuneMaterial")
+    sand_mat.use_nodes = True
+    principled_bsdf = sand_mat.node_tree.nodes.get("Principled BSDF")
+    principled_bsdf.inputs["Base Color"].default_value = (0.85, 0.78, 0.64, 1)
+    principled_bsdf.inputs["Roughness"].default_value = 0.7
+    ground_plane.data.materials.append(sand_mat)
+
+    if True:
+        # Scale the STL to be a bit larger than the cube
+        max_cube_dimension = 2 #size of cube is 2
+        max_stl_dimension = max(size_vector)
+        print(f"max_stl_dimension: {max_stl_dimension}")
+        scale_factor = max_cube_dimension*1.1 / max_stl_dimension #make it 10% bigger than the cube
+        print(f"scale_factor: {scale_factor}")
+        imported_object.scale = (scale_factor, scale_factor, scale_factor)
+
+        # Position the camera to view the STL
+        max_dimension = max(max_cube_dimension, max_stl_dimension*scale_factor)
+        camera_distance = max_dimension * 2.5  # Adjust this multiplier for margin around the object
+        camera_location = (0, -camera_distance, 0)
+        camera_rotation = (math.pi/2, 0, 0)
+    else:
+        camera_mul = 0.5
+        camera_location = (camera_mul*5, camera_mul*-5, camera_mul*4)
+        camera_rotation = (1.05, 0, 0.79)
+    # raise
+
+    bpy.ops.object.camera_add(enter_editmode=False, align='WORLD', location=camera_location, rotation=camera_rotation)
+    camera = bpy.context.object
+    bpy.context.scene.camera = camera
+
+    bpy.ops.object.light_add(type='SUN', radius=1, align='WORLD', location=(5, 5, 5))
+    light = bpy.context.object
+
+    bpy.context.scene.render.filepath = '/app/rendered_scene.png'
+    bpy.context.scene.render.image_settings.file_format = 'PNG'
+    bpy.context.scene.render.resolution_x = 1920
+    bpy.context.scene.render.resolution_y = 1080
+    bpy.context.scene.render.resolution_percentage = 33  # 100
+
+    bpy.ops.render.render(write_still=True)
+
+if __name__ == "__main__":
+    render_scene_to_png()
+END_OF_PYTHON
+RUN blender --background --python-exit-code 42 --python /app/render_scene.py
+
+FROM scratch AS final-png
+COPY --from=blender-render /app/rendered_scene.png /
